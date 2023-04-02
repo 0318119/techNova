@@ -1,0 +1,301 @@
+
+// COLORS =======================================
+@import 'color';
+
+
+.navSection {
+    width: 100%;
+    padding: 15px 8px;
+}
+
+.mainBox {
+    .logoBox {
+        a {
+            img {
+                height: 60px;
+                width: 70px;
+                object-fit: scale-down;
+            }
+        }
+    }
+
+    .menuBar {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        position: relative;
+
+        svg {
+            font-size: 40px;
+            color: $textColorWhite;
+        }
+
+        svg.contactIcon {
+            font-size: 43px;
+            padding: 8px 4px;
+            background: $textColorWhite;
+            border-radius: 8px;
+            color: black;
+        }
+
+        .actionBox {
+            position: relative;
+
+            svg.actIcon {
+                border: 3px solid;
+                border-radius: 50px;
+                padding: 5px;
+                font-size: 45px;
+            }
+
+            #hideAction {
+                opacity: 0;
+                transition: 0.1s ease-out;
+            }
+
+            #showAction {
+                opacity: 1;
+                transition: 0.1s;
+            }
+
+            .callerBox {
+                background: $textColorWhite;
+                width: 350px;
+                border-radius: 10px;
+                position: absolute;
+                right: 0;
+                margin-top: 50px;
+                padding: 10px 17px;
+                opacity: 0;
+                box-shadow: 10px 10px 10px #0000008a;
+                z-index: 99;
+
+                .getInTouch_head {
+                    color: black;
+                    margin-top: 20px;
+                }
+
+                .salesTeam {
+                    position: relative;
+                    background: $textColorWhite;
+                    display: inline;
+                    top: 11px;
+                    left: 25px;
+                    padding: 10px 9px;
+                }
+
+                .contentBox {
+                    border: 1px dashed grey;
+                    padding: 10px 20px;
+
+                    li {
+                        display: flex;
+                        align-items: center;
+                        margin: 20px 0;
+
+                        img {
+                            width: 40px;
+                            height: 40px;
+                        }
+
+                        h5 {
+                            margin-left: 10px;
+                            margin-top: 9px;
+                        }
+                    }
+                }
+            }
+
+        }
+
+        button.actBtns {
+            color: black;
+            background-color: $bgYellowColor;
+            font-weight: 500;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            padding: 15px 30px;
+            border-radius: 0;
+            border: 2px solid #444;
+            position: relative;
+            z-index: 1;
+            transition: all 0.3s ease-in-out;
+            box-shadow: 10px 11px 29px #0000008f;
+
+            &:focus,
+            &:hover {
+                color: $textColorWhite;
+                background-color: transparent;
+                border-radius: 0 15px;
+                border-color: $textColorWhite;
+                background: black;
+            }
+
+            &::before {
+                content: "";
+                background: linear-gradient(to right bottom, $textColorWhite 50%, transparent 51%);
+                width: 50%;
+                height: 100%;
+                opacity: 0;
+                position: absolute;
+                top: 0;
+                left: 0;
+                z-index: -1;
+                transition: all 0.3s ease;
+            }
+
+            &:focus:before,
+            &:hover:before {
+                width: 25px;
+                height: 25px;
+                opacity: 1;
+                left: -2px;
+                top: -2px;
+            }
+        }
+
+        button.menuBtn {
+            font-size: 21px;
+            background: none;
+            color: $textColorWhite;
+            font-weight: 600;
+            border: 1px solid $bgYellowColor;
+            margin-right: 11px;
+            border-radius: 5px;
+        }
+    }
+}
+
+// MENU ====================================================================
+.mainMenuBox {
+    .innerMenuBox {
+        position: relative;
+        display: flex;
+        justify-content: flex-end;
+
+        ul {
+            position: relative;
+            margin-top: 50px;
+
+            >span {
+                position: absolute;
+                display: block;
+                background: $textColorWhite;
+                width: 2px;
+                height: 531px;
+                left: 0px;
+                top: 26px;
+                border-radius: 60px;
+            }
+
+            li {
+                position: relative;
+                border-bottom: 1px solid $textColorWhite;
+                padding: 0 40px 0 0;
+
+                a {
+                    color: $textColorWhite;
+                    line-height: 3;
+                    font-size: 18px;
+                    padding: 0 0px 5px 25px;
+                    letter-spacing: 2px;
+                    font-weight: 600;
+                }
+            }
+        }
+    }
+}
+
+.dropDownBox {
+    span.closeSpan {
+        letter-spacing: 1px;
+        font-weight: 500;
+        font-size: 20px;
+        color: $textColorWhite;
+        position: absolute;
+        top: 11px;
+        right: 29px;
+        display: flex;
+        align-items: center;
+        margin-right: 20px;
+        text-transform: capitalize;
+        border: 1px solid;
+        padding: 8px 20px;
+        border-radius: 38px;
+        z-index: 999;
+
+        .crosIcon {
+            width: 100%;
+            position: relative;
+            margin-left: 20px;
+            font-size: 30px;
+        }
+    }
+
+    .innerDropDownBox {
+        display: flex;
+        border-left: 3px solid $textColorWhite;
+        margin-top: 70px;
+        margin-left: 15px;
+
+        ul {
+            border-right: 2px solid $textColorWhite;
+
+            h4 {
+                border-bottom: 2px solid $textColorWhite;
+                color: $textColorWhite;
+                font-size: 20px;
+                font-weight: 500;
+                padding: 10px 20px;
+                border-top: 2px solid $textColorWhite;
+            }
+
+            li {
+                margin: 0 0 0px 20px;
+                padding-right: 20px;
+
+                a {
+                    color: $textColorWhite;
+                    line-height: 2;
+                    font-size: 17px;
+                    font-weight: 400;
+                }
+            }
+
+            span {
+                text-align: center;
+                margin: 6px 0;
+                border: 2px solid $textColorWhite;
+                padding: 5px 0;
+                background: $bgYellowColor;
+                color: black;
+                letter-spacing: 1px;
+                font-weight: 500;
+                font-size: 18px;
+                border-radius: 50px;
+            }
+        }
+    }
+}
+
+// SIDE BAR HIDE SHOW CLASSES ============================================================================
+.closeBar {
+    position: absolute;
+    right: -100%;
+    transition: 1s;
+    width: 100%;
+}
+
+.openBar {
+    position: absolute;
+    right: 0;
+    transition: 1s;
+    width: 100%;
+}
+
+#MenuSection {
+    background: $backgorundLinear;
+    padding: 0 0 50px 0;
+    z-index: 9999;
+    box-shadow: -5px -1px 96px #0000009e;
+}

@@ -1,0 +1,22 @@
+.sliderSectionAwarded {
+  margin-top: 80px;
+}
+
+.colSliderAward > h4.awardedHead {
+  font-size: 50px;
+  text-align: center;
+}
+.colSliderAward .awardedImages {
+  height: 44px;
+  width: 200px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  margin: auto;
+  display: block;
+}
+
+.sliderBoxAwarded {
+  background: linear-gradient(120deg, #5828fa 0, #7119f1 20%, #8e06e6 100%);
+  padding: 30px 0 30px 99px;
+  border-radius: 200px 0 0 0;
+}/*# sourceMappingURL=CertifiedServices.module.css.map */

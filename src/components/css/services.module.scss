@@ -1,0 +1,194 @@
+// COLORS =======================================
+@import 'color';
+// ========================================
+.services_sided_icon {
+    margin-top: 50px;
+    position: relative;
+    &:after{
+        content: "";
+        position: absolute;
+        top: 0;
+        right: 0;
+        height: 356px;
+        width: -webkit-fill-available;
+        background-image: url(../images/shapesBg/serviceslist_bg-top.png);
+        background-size: contain;
+        background-position: right;
+        background-repeat: no-repeat;
+    }
+
+        &:before {
+            content: "";
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            height: 356px;
+            width: -webkit-fill-available;
+            background-image: url(../images/shapesBg/serviceslist_bg-botom.webp);
+            background-size: contain;
+            background-repeat: no-repeat;
+        }
+
+    .servicesHead {
+        font-size: 40px;
+        font-weight: 400;
+        text-align: center;
+    }
+    .headLinesImg{
+        height: 44px;
+        width: 160px;
+        object-fit: cover;
+    }
+
+
+    .services_sided_icon:after {
+        content: "";
+        position: absolute;
+        height: 627px;
+        width: 374px;
+        background-image: url(../images/shapesBg/serviceslist_bg-botom.webp);
+        right: 0;
+        top: 0;
+        background-repeat: no-repeat;
+    }
+
+    .services_sided_icon:before {
+        content: "";
+        position: absolute;
+        height: 627px;
+        width: 374px;
+        background-image: url(../images/shapesBg/serviceslist_bg-top.png);
+        left: 0;
+        bottom: 0;
+        background-repeat: no-repeat;
+    }
+
+    .serviceBox {
+        background-color: $textColorWhite;
+        text-align: center;
+        padding: 40px 0 20px;
+        margin-top: 50px;
+        border-radius: 25px;
+        box-shadow: 8px 5px 8px rgba(0, 0, 0, 0.3);
+
+        .title {
+            color: $textColorWhite;
+            background: $backgorundLinear;
+            font-size: 20px;
+            font-weight: 300;
+            text-transform: capitalize;
+            padding: 10px 15px;
+            box-shadow: inset 0 5px 10px rgba(0, 0, 0, 0.4);
+            position: relative;
+            margin: 0 0 20px;
+
+            &:before {
+                content: "";
+                background: $bgYellowColor;
+                border-radius: 25px 5px 5px 25px;
+                position: absolute;
+                top: -10px;
+                left: -7px;
+                bottom: -10px;
+                right: 100%;
+            }
+        }
+
+        .service-icon {
+            width: 85px;
+            height: 85px;
+            margin: 0 auto 20px;
+            border-radius: 50%;
+            border: 2px solid $backgorundLinear;
+            position: relative;
+            z-index: 1;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            line-height: 0;
+
+            &:before {
+                content: "";
+                background: $textColorWhite;
+                border-radius: 50%;
+                box-shadow: 0 5px 8px rgba(0, 0, 0, 0.4);
+                position: absolute;
+                top: 5px;
+                left: 5px;
+                right: 5px;
+                bottom: 5px;
+                z-index: -1;
+            }
+
+            img {
+                height: 50px;
+            }
+        }
+
+        .btnBox {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+            img {
+                height: 20px;
+                width: 100px;
+                object-fit: contain;
+            }
+
+            button {
+                color: black;
+                background-color: $bgYellowColor;
+                font-weight: 500;
+                text-transform: uppercase;
+                letter-spacing: 1px;
+                padding: 7px 13px;
+                border-radius: 0;
+                border: 2px solid white;
+                position: relative;
+                z-index: 1;
+                transition: all 0.3s ease-in-out;
+                box-shadow: -4px 11px 29px rgb(0 0 0 / 38%);
+                margin-top: 18px;
+            }
+        }
+    }
+}
+
+.serviceBox {
+    &:hover {
+        button {
+
+            &:focus,
+            &:hover {
+                color: $textColorWhite;
+                background-color: transparent;
+                border-radius: 0 15px;
+                border-color: $textColorWhite;
+                background: black;
+            }
+
+            &::before {
+                content: "";
+                background: linear-gradient(to right bottom, $textColorWhite 50%, transparent 51%);
+                width: 50%;
+                height: 100%;
+                opacity: 0;
+                position: absolute;
+                top: 0;
+                left: 0;
+                z-index: -1;
+                transition: all 0.3s ease;
+            }
+
+            &:focus:before,
+            &:hover:before {
+                width: 25px;
+                height: 25px;
+                opacity: 1;
+                left: -2px;
+                top: -2px;
+            }
+        }
+    }
+}

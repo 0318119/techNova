@@ -1,0 +1,48 @@
+// COLORS =============================================
+@import 'color';
+
+
+// ANIMATIONS ========================================================
+@keyframes float {
+    0% {
+        transform: translatey(0px);
+    }
+
+    50% {
+        transform: translatey(-20px);
+    }
+
+    100% {
+        transform: translatey(0px);
+    }
+}
+
+
+// ABOUT SECTION SCSS ========================
+.aboutSection {
+    margin-top: 100px;
+
+    .aboutTxtBox {
+        .aboutHead {
+            font-size: 40px;
+        }
+
+        img {
+            height: 44px;
+            width: 200px;
+            object-fit: cover;
+        }
+
+        p {
+            line-height: 27px;
+            margin: 30px 0;
+        }
+    }
+
+}
+
+.aboutImgBox{
+    img{
+        animation: float 6s ease-in-out infinite;
+    }
+}

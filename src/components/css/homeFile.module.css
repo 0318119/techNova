@@ -1,0 +1,31 @@
+@keyframes float {
+  0% {
+    transform: translatey(0px);
+  }
+  50% {
+    transform: translatey(-20px);
+  }
+  100% {
+    transform: translatey(0px);
+  }
+}
+.aboutSection {
+  margin-top: 100px;
+}
+.aboutSection .aboutTxtBox .aboutHead {
+  font-size: 40px;
+}
+.aboutSection .aboutTxtBox img {
+  height: 44px;
+  width: 200px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.aboutSection .aboutTxtBox p {
+  line-height: 27px;
+  margin: 30px 0;
+}
+
+.aboutImgBox img {
+  animation: float 6s ease-in-out infinite;
+}/*# sourceMappingURL=homeFile.module.css.map */
