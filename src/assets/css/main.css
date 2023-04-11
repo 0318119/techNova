@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
 body {
     overflow-x: clip;
     background: whitesmoke;
@@ -17,23 +18,27 @@ h6 {
     font-family: 'Exo 2', sans-serif;
 }
 
-ul{
+ul {
     padding: 0;
     margin: 0;
 }
+
 li {
     list-style: none;
     padding: 0%;
     margin: 0%;
 }
-p{
+
+p {
     font-family: 'Poppins', sans-serif;
 }
-span{
+
+span {
     font-family: 'Exo 2', sans-serif;
     display: block;
     cursor: pointer;
 }
+
 a {
     display: block;
     text-decoration: none;
@@ -45,23 +50,31 @@ a {
 a:hover {
     text-decoration: none;
 }
-img{
+
+img {
     cursor: pointer;
 }
+
 button {
     border: none;
     cursor: pointer;
 }
+
 svg {
     cursor: pointer;
 }
-input:focus{
+
+input:focus {
     border: none;
 }
 
-.certifiedSlider .slick-prev,.slick-next {
+/* CERTIFIED SLIDEr CSS ===================================================== */
+.certifiedSlider .slick-prev {
     top: 100% !important;
-    /* margin-top: 13px; */
+}
+
+.certifiedSlider .slick-next {
+    top: 100% !important;
 }
 
 .certifiedSlider .slick-prev {
@@ -72,7 +85,188 @@ input:focus{
     right: 45%;
 }
 
-.certifiedSlider .slick-prev:before, .slick-next:before{
+.certifiedSlider .slick-prev:before {
     color: yellow !important;
     font-size: 30px !important;
+    opacity: 1 !important;
+}
+
+.certifiedSlider .slick-next:before {
+    color: yellow !important;
+    font-size: 30px !important;
+    opacity: 1 !important;
+}
+
+/* TESTIMONIALS SLIDER CSS ================================================================= */
+.testimonialsSlider .slick-prev {
+    top: 50% !important;
+}
+
+.testimonialsSlider .slick-next {
+    top: 50% !important;
+}
+
+.testimonialsSlider .slick-prev {
+    left: -15%;
+}
+
+.testimonialsSlider .slick-next {
+    right: -11%;
+}
+
+.testimonialsSlider .slick-prev:before {
+    color: yellow !important;
+    font-size: 30px !important;
+    border: 6px solid;
+    padding: 4px 2px 0 2px;
+    border-radius: 55px;
+    box-shadow: 4px 5px 10px  rgba(0, 0, 0, 0.432);
+    opacity: 1 !important;
+}
+
+.testimonialsSlider .slick-next:before {
+    color: yellow !important;
+    font-size: 30px !important;
+    border: 6px solid;
+    padding: 4px 2px 0 2px;
+    border-radius: 55px;
+    box-shadow: 4px 5px 10px rgba(0, 0, 0, 0.432);
+    opacity: 1 !important;
+}
+
+/* // HOME TABS SCSS ======================================================================= */
+.homeTabSection {
+    margin: 50px auto;
+}
+
+.fade:not(.show) {
+    opacity: 1;
+}
+
+.HomeTab .nav-tabs {
+    display: flex;
+    justify-content: center;
+    background: #fff;
+    border-radius: 20px;
+    border: none;
+    padding: 10px;
+    line-height: 75px;
+    box-shadow: -7px 5px 10px #8080806b;
+}
+
+.HomeTab .nav-tabs li {
+    float: none;
+    display: inline-block;
+    position: relative;
+    margin: 0 20px;
+}
+
+.HomeTab .nav-tabs li a {
+    font-size: 16px;
+    font-weight: 700;
+    background: none;
+    color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 20px;
+    transition: all 0.5s ease 0s;
+}
+
+.HomeTab .nav-tabs li a svg {
+    font-size: 29px;
+    margin-right: 10px;
+}
+
+.HomeTab .nav-tabs li a span {
+    line-height: 16px;
+}
+
+.HomeTab .nav-tabs li a:hover {
+    background: #5828fa;
+    color: #fff;
+    border: none;
+}
+
+.HomeTab .nav-tabs li.active a,
+.HomeTab .nav-tabs li.active a:focus,
+.HomeTab .nav-tabs li.active a:hover {
+    border: none;
+    background: #5828fa;
+    color: #fff;
+}
+
+.HomeTab .tab-content {
+    font-size: 14px;
+    color: #686868;
+    line-height: 25px;
+    text-align: left;
+    padding: 5px 20px;
+}
+
+.HomeTab .tab-content h3 {
+    font-size: 22px;
+    color: #5b5a5a;
+}
+
+.HomeTab .tab-content .homeTabFlexBox {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.HomeTab .homeTabFlexBox .homeTabImageBox img {
+    height: 366px;
+    padding: 14px 27px;
+}
+
+.HomeTab .homeTabFlexBox .homeTabTxt h4 {
+    font-size: 33px;
+    color: black;
+    margin-bottom: 20px;
+}
+
+.HomeTab .homeTabFlexBox .homeTabTxt .iconsBox {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.HomeTab .homeTabFlexBox .homeTabTxt .iconsBox .innerIconBox img {
+    margin-top: 20px !important;
+    height: 40px;
+    display: block;
+    margin: auto;
+}
+
+.HomeTab .homeTabFlexBox .homeTabTxt .iconsBox .innerIconBox span {
+    margin-top: 9px;
+    border: 1px dashed #80808078;
+    padding: 0 15px;
+    border-radius: 20px;
+    font-size: 12px;
+    line-height: 22px;
+    text-transform: capitalize;
+    letter-spacing: 1px;
+    transition: 0.1s;
+}
+
+.HomeTab .homeTabFlexBox .homeTabTxt .iconsBox .innerIconBox:hover span {
+    background: #5828fa;
+    color: white;
+    transition: 1s;
+}
+
+@media only screen and (max-width: 480px) {
+    .HomeTab .nav-tabs {
+        border-radius: 10px;
+    }
+
+    .HomeTab .nav-tabs li {
+        width: 100%;
+        text-align: center;
+        margin-bottom: 5px;
+    }
 }

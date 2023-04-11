@@ -1,0 +1,94 @@
+// COLORS =======================================
+@import 'color';
+
+// ===========================================================
+.testiSection{
+    // background: linear-gradient(120deg, #5828fa 0, 20%, #8e06e6 100%);;
+    margin-top: 50px;
+    padding: 100px 0;
+    background-image: url(../images/testimonials/testibg.jpg);
+    background-size: cover;
+    background-position:  center center;
+}
+
+.slideMainBox{
+    background: #5828F9;
+    box-shadow: -7px 2px 10px #08429894;
+    padding: 70px 50px;
+    border: 8px solid white;
+    border-radius: 12px;
+    .slideBox{
+        display: flex !important;
+        justify-content: space-between;
+        align-items: center;
+        img{
+            background: #000;
+            height: 250px;
+            width: 250px;
+            object-fit: contain;
+            padding: 0 23px;
+            border-radius: 28px;
+            border: 3px solid $textColorWhite;
+            box-shadow: inset 22px 1px 0px red;
+        }
+        .slideContentBody{
+            padding: 0 82px;
+            .headBox{
+                display: flex;
+                align-items: center;
+                color: $textColorWhite;
+                h4{
+                    font-size: 40px;
+                    margin-right: 25px;
+                    position: relative;
+                    &:after{
+                        content: "";
+                        position: absolute;
+                        left: -65px;
+                        height: 88px;
+                        width: 57px;
+                        background-image: url(../images/testimonials/apostrophe.webp);
+                        top: -41px;
+                        background-repeat: no-repeat;
+                        background-size: contain;
+                        transform: rotate(180deg);
+                    }
+                }
+                span{
+                    font-size: 25px;
+                    position: relative;
+                    top: 4px;
+                    border-left: 2px solid grey;
+                    padding-left: 20px;
+                }
+            }
+            .slideContentBox{
+                color: $textColorWhite;
+                h4{
+                    margin-top: 30px;
+                    display: inline-block;
+                    border-bottom: 1px solid $textColorWhite;
+                    padding-bottom: 8px;
+                }
+                p{
+                    margin-top: 10px;
+                    line-height: 28px;
+                    letter-spacing: 1px;
+                    position: relative;
+                    &:after {
+                            content: "";
+                            position: absolute;
+                            right: -65px;
+                            height: 88px;
+                            width: 57px;
+                            background-image: url(../images/testimonials/apostrophe.webp);
+                            bottom: -41px;
+                            background-repeat: no-repeat;
+                            background-size: contain;
+                            // transform: rotate(180deg);
+                        }
+                }
+            }
+        }
+    }
+}

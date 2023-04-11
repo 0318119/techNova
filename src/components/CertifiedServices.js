@@ -28,18 +28,17 @@ import Certified_style from './css/CertifiedServices.module.css'
 // SLICK SLIDER ============================================
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
-import "slick-carousel/slick/slick-theme.css";
+// import "slick-carousel/slick/slick-theme.css";
 function CertifiedServices() {
   return (
         <>
             <section className={`${Certified_style.sliderSectionAwarded}`}>
                 <div className="container-fluid" >
-                    <div className="row">
+                  <div className="row align-items-center">
                       <div className="col-1"></div>
                       <div className="col-3">
                           <div className={`${Certified_style.colSliderAward}`}>
                               <h4 className={`${Certified_style.awardedHead}`}>We Are Awarded & Certified For Our Services</h4>
-                              <img src={headLines} alt="" className={`${Certified_style.awardedImages}`} />
                            </div>
                         </div>
                       <div className="col-1"></div>
@@ -68,7 +67,7 @@ class SliderAwarded extends Component {
             autoplaySpeed: 2000,
             focusOnSelect: true,
             pauseOnHover: true,
-            slidesToShow: 6,
+            slidesToShow: 5,
             slidesToScroll: 1,
             className: "certifiedSlider",
         };

@@ -166,6 +166,11 @@
   letter-spacing: 2px;
   font-weight: 600;
 }
+.mainMenuBox .innerMenuBox ul li a:hover {
+  color: yellow;
+  text-shadow: 0 3px black;
+  transition: 1s;
+}
 
 .dropDownBox span.closeSpan {
   letter-spacing: 1px;
@@ -215,7 +220,13 @@
   color: white;
   line-height: 2;
   font-size: 17px;
+  letter-spacing: 1px;
   font-weight: 400;
+}
+.dropDownBox .innerDropDownBox ul li a:hover {
+  color: yellow;
+  text-shadow: 0 3px black;
+  transition: 1s;
 }
 .dropDownBox .innerDropDownBox ul span {
   text-align: center;

@@ -1,4 +1,5 @@
 import React, { useState, useRef,useEffect } from 'react'
+import { Link } from "react-router-dom";
 // CSS ===================================
 import style_Nav from '../components/css/NavBar.module.css'
 // IMAGES ===================================
@@ -112,14 +113,14 @@ function NavBar() {
                 <div className={`${style_Nav.innerMenuBox}`}>
                   <ul>
                     <span></span>
-                    <li><a href="">Home</a></li>
-                    <li><a href="">Our work</a></li>
-                    <li><a href="">Services <Right_arrow /></a></li>
-                    <li><a href="">About us</a></li>
-                    <li><a href="">Our reviews</a></li>
-                    <li><a href="">Contact us</a></li>
-                    <li><a href="">Career</a></li>
-                    <li><a href="">Hire us</a></li>
+                    <li><Link href="/">Home</Link></li>
+                    <li><Link to="/OurWork">Our work</Link></li>
+                    <li><Link href="">Services <Right_arrow /></Link></li>
+                    <li><Link href="">About us</Link></li>
+                    <li><Link href="">Our reviews</Link></li>
+                    <li><Link href="">Contact us</Link></li>
+                    <li><Link href="">Career</Link></li>
+                    <li><Link href="">Hire us</Link></li>
                     <li className='border-0'><a href="">Get a quote</a></li>
                   </ul>
                 </div>
@@ -133,73 +134,73 @@ function NavBar() {
                 <div className={`${style_Nav.innerDropDownBox}`}>
                   <ul>
                     <h4>Web Development</h4>
-                    <li><a href="">Web Design</a></li>
-                    <li><a href="">Email Templates</a></li>
-                    <li><a href="">Landing Page</a></li>
-                    <li><a href="">UX Design</a></li>
-                    <li><a href="">PHP</a></li>
-                    <li><a href="">Laravel</a></li>
-                    <li><a href="">NodeJS</a></li>
-                    <li><a href="">ReactJS</a></li>
-                    <li><a href="">NextJS</a></li>
-                    <li><a href="">AngularJS</a></li>
-                    <li><a href="">VueJS</a></li>
+                    <li><Link href="">Web Design</Link></li>
+                    <li><Link href="">Email Templates</Link></li>
+                    <li><Link href="">Landing Page</Link></li>
+                    <li><Link href="">UX Design</Link></li>
+                    <li><Link href="">PHP</Link></li>
+                    <li><Link href="">Laravel</Link></li>
+                    <li><Link href="">NodeJS</Link></li>
+                    <li><Link href="">ReactJS</Link></li>
+                    <li><Link href="">NextJS</Link></li>
+                    <li><Link href="">AngularJS</Link></li>
+                    <li><Link href="">VueJS</Link></li>
                   </ul>
 
                   <ul>
                     <h4>CMS Development</h4>
-                    <li><a href="">Wordpress</a></li>
-                    <li><a href="">Magento</a></li>
-                    <li><a href="">Shopify</a></li>
-                    <li><a href="">Joomla</a></li>
-                    <li><a href="">Drupal</a></li>
-                    <li><a href="">WooCommerce</a></li>
-                    <li><a href="">Opencart</a></li>
-                    <li><a href="">ClickFunnels</a></li>
+                    <li><Link href="">Wordpress</Link></li>
+                    <li><Link href="">Magento</Link></li>
+                    <li><Link href="">Shopify</Link></li>
+                    <li><Link href="">Joomla</Link></li>
+                    <li><Link href="">Drupal</Link></li>
+                    <li><Link href="">WooCommerce</Link></li>
+                    <li><Link href="">Opencart</Link></li>
+                    <li><Link href="">ClickFunnels</Link></li>
                   </ul>
 
                   <ul>
                     <h4>Logo & Animation</h4>
-                    <li><a href="">Iconic Logo</a></li>
-                    <li><a href="">Typography Logo</a></li>
-                    <li><a href="">Illustrative Logo</a></li>
-                    <li><a href="">Animated Logo</a></li>
-                    <li><a href="">3d Logo</a></li>
-                    <li><a href="">2d Logo</a></li>
+                    <li><Link href="">Iconic Logo</Link></li>
+                    <li><Link href="">Typography Logo</Link></li>
+                    <li><Link href="">Illustrative Logo</Link></li>
+                    <li><Link href="">Animated Logo</Link></li>
+                    <li><Link href="">3d Logo</Link></li>
+                    <li><Link href="">2d Logo</Link></li>
                     <span>Animations <Down_arrow /></span>
-                    <li><a href="">2d Graphics Anime</a></li>
-                    <li><a href="">3d Graphics Anime</a></li>
-                    <li><a href="">Typography Anime</a></li>
-                    <li><a href="">White Board Anime</a></li>
+                    <li><Link href="">2d Graphics Anime</Link></li>
+                    <li><Link href="">3d Graphics Anime</Link></li>
+                    <li><Link href="">Typography Anime</Link></li>
+                    <li><Link href="">White Board Anime</Link></li>
                   </ul>
 
                   <ul>
                     <h4>Mobile Apps</h4>
-                    <li><a href="">Mobile Apps</a></li>
-                    <li><a href="">Andriod Apps</a></li>
-                    <li><a href="">IOS Apps</a></li>
-                    <li><a href="">Web Apps</a></li>
-                    <li><a href="">Native Apps</a></li>
-                    <li><a href="">Hybrid Apps</a></li>
+                    <li><Link href="">Mobile Apps</Link></li>
+                    <li><Link href="">Andriod Apps</Link></li>
+                    <li><Link href="">IOS Apps</Link></li>
+                    <li><Link href="">Web Apps</Link></li>
+                    <li><Link href="">Native Apps</Link></li>
+                    <li><Link href="">Hybrid Apps</Link></li>
                   </ul>
 
                   <ul>
                     <h4>Digital Marketing</h4>
-                    <li><a href="">SEM</a></li>
-                    <li><a href="">Content Management</a></li>
-                    <li><a href="">SMA</a></li>
-                    <li><a href="">SMM</a></li>
-                    <li><a href="">SEO</a></li>
-                    <li><a href="">Pay Per Click</a></li>
-                    <li><a href="">Email Marketing</a></li>
+                    <li><Link href="">SEM</Link></li>
+                    <li><Link href="">Content Management</Link></li>
+                    <li><Link href="">SMA</Link></li>
+                    <li><Link href="">SMM</Link></li>
+                    <li><Link href="">SEO</Link></li>
+                    <li><Link href="">Pay Per Click</Link></li>
+                    <li><Link href="">Email Marketing</Link></li>
                   </ul>
 
                   <ul>
                     <h4>Print Media Design</h4>
-                    <li><a href="">Brochure Design</a></li>
-                    <li><a href="">T-Shirts &amp; Caps Design</a></li>
-                    <li><a href="">Car Wraps</a></li>
-                    <li><a href="">Stationary Design</a></li>
+                    <li><Link href="">Brochure Design</Link></li>
+                    <li><Link href="">T-Shirts &amp; Caps Design</Link></li>
+                    <li><Link href="">Car Wraps</Link></li>
+                    <li><Link href="">Stationary Design</Link></li>
                   </ul>
                 </div>
               </div>
@@ -207,39 +208,6 @@ function NavBar() {
           </div>
         </div>
       </section>
-
-      {/* ======================================================== */}
-      {/* <section className={`${style_Nav.callerBox}`} id={isCloseActionBox ? `${style_Nav.hideAction}` : `${style_Nav.showAction}`}>
-        <div>
-          <h5 className={`${style_Nav.getInTouch_head}`}>Get In Touch</h5>
-
-          <h6 className={`${style_Nav.salesTeam}`}>TECHNOVA Sales Team</h6>
-          <ul className={`${style_Nav.contentBox}`}>
-            <li>
-              <img src={usa_flag} alt="" />
-              <h5>1245785454</h5>
-            </li>
-            <li>
-              <img src={skype} alt="" />
-              <h5>TECHNOVA WEB</h5>
-            </li>
-            <li>
-              <img src={message} alt="" />
-              <h5>Sales@TECHNOVA.com</h5>
-            </li>
-          </ul>
-
-
-          <h6 className={`${style_Nav.salesTeam}`}>TECHNOVA HR Team</h6>
-          <ul className={`${style_Nav.contentBox}`}>
-            <li>
-              <img src={message} alt="" />
-              <h5>HR@TECHNOVA.com</h5>
-            </li>
-          </ul>
-
-        </div>
-      </section> */}
     </>
   )
 }

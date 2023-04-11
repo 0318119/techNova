@@ -44,5 +44,10 @@
 .aboutImgBox{
     img{
         animation: float 6s ease-in-out infinite;
+        height: 550px;
+        width: 100%;
+        object-fit: cover;
     }
 }
+
+

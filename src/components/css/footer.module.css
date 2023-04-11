@@ -1,0 +1,112 @@
+.footerSection {
+  background: linear-gradient(120deg, #5828fa 0, #7119f1 20%, #8e06e6 100%);
+  margin-top: 50px;
+  padding: 120px 0 20px 0;
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
+
+.footerMallingBox .botLogoBox img {
+  height: 50px;
+  width: 113px;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+.footerMallingBox ul li {
+  display: flex;
+  line-height: 35px;
+  align-items: baseline;
+}
+.footerMallingBox ul li svg {
+  font-size: 26px;
+  position: relative;
+  top: 8px;
+  color: white;
+}
+.footerMallingBox ul li a {
+  margin-left: 20px;
+  color: white;
+}
+
+.footerLinksBox {
+  margin-top: 20px;
+}
+.footerLinksBox h4 {
+  color: white;
+  font-weight: 600;
+  letter-spacing: 1px;
+  font-size: 30px;
+}
+.footerLinksBox ul li {
+  line-height: 35px;
+}
+.footerLinksBox ul li a {
+  letter-spacing: 1px;
+  color: white;
+}
+
+.footerCardBox {
+  margin-top: 20px;
+}
+.footerCardBox h4 {
+  color: white;
+  font-weight: 600;
+  letter-spacing: 1px;
+  font-size: 30px;
+}
+.footerCardBox ul {
+  display: flex;
+}
+.footerCardBox ul.socialLinks {
+  margin-top: 20px;
+}
+.footerCardBox ul.socialLinks li:nth-child(1),
+.footerCardBox ul.socialLinks li:nth-child(2),
+.footerCardBox ul.socialLinks li:nth-child(3) {
+  margin-right: 10px !important;
+}
+.footerCardBox ul.socialLinks li {
+  background: white;
+  border-radius: 10px 10px 10px 0;
+  padding: 2px 6px;
+}
+.footerCardBox ul.socialLinks li a {
+  color: black;
+}
+.footerCardBox ul.cardsIcons {
+  margin-top: 20px;
+  border-top: 1px solid white;
+  padding-top: 15px;
+}
+.footerCardBox ul.cardsIcons li:nth-child(1),
+.footerCardBox ul.cardsIcons li:nth-child(2),
+.footerCardBox ul.cardsIcons li:nth-child(3),
+.footerCardBox ul.cardsIcons li:nth-child(4),
+.footerCardBox ul.cardsIcons li:nth-child(5) {
+  margin-right: 10px !important;
+}
+.footerCardBox ul.cardsIcons li svg {
+  font-size: 30px;
+  color: white;
+}
+
+.copyRightSection {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 120px;
+  border-top: 2px solid white;
+  padding-top: 15px;
+}
+.copyRightSection span {
+  color: white;
+}
+.copyRightSection div {
+  display: flex;
+}
+.copyRightSection div li:nth-child(1) {
+  margin-right: 20px;
+}
+.copyRightSection div li a {
+  color: white;
+}/*# sourceMappingURL=footer.module.css.map */

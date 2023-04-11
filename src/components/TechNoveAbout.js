@@ -22,7 +22,7 @@ function TechNoveAbout() {
                             Tech Nova is formulated to serve society by providing Web Services, Mobile Services, and other IT services. Being a Top Web and App Development Company we always work on innovative and unique solutions as per client needs.
                         </p>
                         <p>
-                            We are one the Best Web Development companies in India, USA We work on different CMS and Frameworks like Codeigniter, Laravel, WordPress, Magento, Shopify, etc and at the same time, we work on Android Apps, iOS Apps, Flutter, Nodejs, ReactJS, AngularJS, VueJS, etc. Hire Top Web & App Experts to cover all your Web and App Development requirements.
+                            We are one the Best Web Development companies in UK, USA We work on different CMS and Frameworks like Codeigniter, Laravel, WordPress, Magento, Shopify, etc and at the same time, we work on Android Apps, iOS Apps, Flutter, Nodejs, ReactJS, AngularJS, VueJS, etc. Hire Top Web & App Experts to cover all your Web and App Development requirements.
                         </p>
                         <p>
                             Our Team of Web & Mobile App Developers are well experienced and talented in their respective platforms. Our work is always requirement specific and user oriented, we always focus on great communication through out work cycle and we provide complete maintenance and support. We always believe in long term work relationship with clients.

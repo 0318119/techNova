@@ -28,4 +28,8 @@
 
 .aboutImgBox img {
   animation: float 6s ease-in-out infinite;
+  height: 550px;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
 }/*# sourceMappingURL=homeFile.module.css.map */

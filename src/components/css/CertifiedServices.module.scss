@@ -11,14 +11,7 @@
 .colSliderAward {
     >h4.awardedHead {
         font-size: 50px;
-        text-align: center;
-    }
-    .awardedImages {
-        height: 44px;
-        width: 200px;
-        object-fit: cover;
-        margin: auto;
-        display: block;
+        text-align: left;
     }
 }
 
@@ -27,9 +20,5 @@
     background: $backgorundLinear;
     padding: 30px 0 30px 99px;
     border-radius: 200px 0 0 0;
-
-    .sliderComponent {
-        img {}
-    }
 }
 

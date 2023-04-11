@@ -1,0 +1,89 @@
+.testiSection {
+  margin-top: 50px;
+  padding: 100px 0;
+  background-image: url(../images/testimonials/testibg.jpg);
+  background-size: cover;
+  background-position: center center;
+}
+
+.slideMainBox {
+  background: #5828F9;
+  box-shadow: -7px 2px 10px rgba(8, 66, 152, 0.5803921569);
+  padding: 70px 50px;
+  border: 8px solid white;
+  border-radius: 12px;
+}
+.slideMainBox .slideBox {
+  display: flex !important;
+  justify-content: space-between;
+  align-items: center;
+}
+.slideMainBox .slideBox img {
+  background: #000;
+  height: 250px;
+  width: 250px;
+  -o-object-fit: contain;
+     object-fit: contain;
+  padding: 0 23px;
+  border-radius: 28px;
+  border: 3px solid white;
+  box-shadow: inset 22px 1px 0px red;
+}
+.slideMainBox .slideBox .slideContentBody {
+  padding: 0 82px;
+}
+.slideMainBox .slideBox .slideContentBody .headBox {
+  display: flex;
+  align-items: center;
+  color: white;
+}
+.slideMainBox .slideBox .slideContentBody .headBox h4 {
+  font-size: 40px;
+  margin-right: 25px;
+  position: relative;
+}
+.slideMainBox .slideBox .slideContentBody .headBox h4:after {
+  content: "";
+  position: absolute;
+  left: -65px;
+  height: 88px;
+  width: 57px;
+  background-image: url(../images/testimonials/apostrophe.webp);
+  top: -41px;
+  background-repeat: no-repeat;
+  background-size: contain;
+  transform: rotate(180deg);
+}
+.slideMainBox .slideBox .slideContentBody .headBox span {
+  font-size: 25px;
+  position: relative;
+  top: 4px;
+  border-left: 2px solid grey;
+  padding-left: 20px;
+}
+.slideMainBox .slideBox .slideContentBody .slideContentBox {
+  color: white;
+}
+.slideMainBox .slideBox .slideContentBody .slideContentBox h4 {
+  margin-top: 30px;
+  display: inline-block;
+  border-bottom: 1px solid white;
+  padding-bottom: 8px;
+}
+.slideMainBox .slideBox .slideContentBody .slideContentBox p {
+  margin-top: 10px;
+  line-height: 28px;
+  letter-spacing: 1px;
+  position: relative;
+}
+.slideMainBox .slideBox .slideContentBody .slideContentBox p:after {
+  content: "";
+  position: absolute;
+  right: -65px;
+  height: 88px;
+  width: 57px;
+  background-image: url(../images/testimonials/apostrophe.webp);
+  bottom: -41px;
+  background-repeat: no-repeat;
+  background-size: contain;
+}/*# sourceMappingURL=testimonials.module.css.map */

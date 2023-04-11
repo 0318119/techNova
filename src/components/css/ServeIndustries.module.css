@@ -1,0 +1,72 @@
+.serveSection {
+  background: linear-gradient(120deg, #5828fa 0, #7119f1 20%, #8e06e6 100%);
+  border-radius: 240px 0 0 0;
+  margin-top: 50px;
+  padding: 0 0px 50px 0;
+}
+
+.serveHeadBox {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.serveHeadBox h4 {
+  color: white;
+  font-size: 40px;
+  margin-top: 50px;
+  border-bottom: 5px dashed white;
+  display: inline;
+  padding-bottom: 10px;
+}
+.serveHeadBox img {
+  display: none;
+}
+.serveHeadBox p {
+  padding: 20px 0;
+  color: white;
+  font-size: 20px;
+  letter-spacing: 1px;
+}
+
+#bgShadowBox {
+  box-shadow: 2px 0px 10px grey;
+  background: white;
+}
+#bgShadowBox .serveInnerBox img {
+  filter: unset;
+}
+#bgShadowBox .serveInnerBox span {
+  color: black;
+}
+#bgShadowBox p {
+  color: black;
+}
+
+.servBox {
+  padding: 30px 20px;
+  border-radius: 10px;
+}
+.servBox .serveInnerBox {
+  display: flex;
+  align-items: center;
+}
+.servBox .serveInnerBox img {
+  height: 50px;
+  width: 50px;
+  filter: invert(100%) grayscale(1);
+}
+.servBox .serveInnerBox span {
+  font-size: 35px;
+  font-weight: 500;
+  margin-left: 10px;
+  border-left: 1px dashed;
+  padding-left: 10px;
+  color: white;
+}
+.servBox p {
+  margin-top: 20px;
+  border-top: 2px dashed grey;
+  font-size: 19px;
+  padding-top: 25px;
+  color: white;
+}/*# sourceMappingURL=ServeIndustries.module.css.map */
