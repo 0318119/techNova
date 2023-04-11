@@ -1,0 +1,20 @@
+.sliderBox {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  padding: 70px 0;
+}
+.sliderBox h4 {
+  color: #242f51;
+  font-weight: 600;
+  font-size: 45px;
+  margin-bottom: 13px;
+}
+.sliderBox p {
+  text-align: center;
+  line-height: 29px;
+  font-weight: 400;
+  font-size: 18px;
+  margin-top: 10px;
+}/*# sourceMappingURL=ourWork.module.css.map */

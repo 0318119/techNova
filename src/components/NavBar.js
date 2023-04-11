@@ -25,17 +25,20 @@ function NavBar() {
   const refTwo  = useRef();
 
   useEffect(() => {
-    document.addEventListener("mousedown", maybeHandler);
+    
+    const maybeHandler = (e) => {
+      if (!refOne.current.contains(e.target)) {
+        setCloseBar(true)
+      } if (!refTwo.current.contains(e.target)){
+        setCloseActionBox(true)
+      }
+    }
+    document.addEventListener("mousedown", maybeHandler,true);
+    return () => {
+      document.removeEventListener("mousedown", maybeHandler, true)
+    }
   }, [])
 
-  const maybeHandler = (e) => {
-    if (!refOne.current.contains(e.target)) {
-      setCloseBar(true)
-    } 
-    if (!refTwo.current.contains(e.target)){
-      setCloseActionBox(true)
-    }
-  }
 
 
   return (
@@ -105,7 +108,7 @@ function NavBar() {
 
       <section className={isCloseBar ? `${style_Nav.closeBar}` : `${style_Nav.openBar}`} id={`${style_Nav.MenuSection}`}>
         <div className="container-fluid">
-          <div className="row">
+          <div className="row" ref={refOne}>
             <div className="col-2">
               <div className={`${style_Nav.mainMenuBox}`}>
 
@@ -113,14 +116,14 @@ function NavBar() {
                 <div className={`${style_Nav.innerMenuBox}`}>
                   <ul>
                     <span></span>
-                    <li><Link href="/">Home</Link></li>
+                    <li><Link to="/">Home</Link></li>
                     <li><Link to="/OurWork">Our work</Link></li>
-                    <li><Link href="">Services <Right_arrow /></Link></li>
-                    <li><Link href="">About us</Link></li>
-                    <li><Link href="">Our reviews</Link></li>
-                    <li><Link href="">Contact us</Link></li>
-                    <li><Link href="">Career</Link></li>
-                    <li><Link href="">Hire us</Link></li>
+                    <li><Link to="">Services <Right_arrow /></Link></li>
+                    <li><Link to="">About us</Link></li>
+                    <li><Link to="">Our reviews</Link></li>
+                    <li><Link to="">Contact us</Link></li>
+                    <li><Link to="">Career</Link></li>
+                    <li><Link to="">Hire us</Link></li>
                     <li className='border-0'><a href="">Get a quote</a></li>
                   </ul>
                 </div>
@@ -128,7 +131,7 @@ function NavBar() {
               </div>
             </div>
 
-            <div className="col-10" ref={refOne}>
+            <div className="col-10" >
               <div className={`${style_Nav.dropDownBox}`}>
                 <span className={`${style_Nav.closeSpan}`} onClick={() => {setCloseBar(true)}} >  close <Crose_icon className={`${style_Nav.crosIcon}`} /> </span>
                 <div className={`${style_Nav.innerDropDownBox}`}>

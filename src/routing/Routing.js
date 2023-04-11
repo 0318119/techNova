@@ -13,7 +13,7 @@ function Routing() {
             <BrowserRouter>
                 <Routes>
                     <Route path="/" element={<Home />} />
-                    <Route path="OurWork" element={<OurWork />} />
+                    <Route path="/OurWork" element={<OurWork />} />
                 </Routes>
             </BrowserRouter>
         </>
