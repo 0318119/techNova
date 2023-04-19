@@ -270,3 +270,76 @@ input:focus {
         margin-bottom: 5px;
     }
 }
+
+
+
+/* PORTFOLIO SECTION CSS ============================================================ */
+.portTab .nav-tabs {
+    display: flex;
+    justify-content: center;
+    background: #fff;
+    border-radius: 20px;
+    border: none;
+    padding: 10px;
+    line-height: 75px;
+    box-shadow: -7px 5px 10px #8080806b;
+}
+
+.portTab .nav-tabs li {
+    float: none;
+    display: inline-block;
+    position: relative;
+    margin: 0 20px;
+}
+
+.portTab .nav-tabs li a {
+    font-size: 16px;
+    font-weight: 700;
+    background: none;
+    color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 20px;
+    transition: all 0.5s ease 0s;
+}
+
+.portTab .nav-tabs li a svg {
+    font-size: 29px;
+    margin-right: 10px;
+}
+
+.portTab .nav-tabs li a span {
+    line-height: 16px;
+}
+
+.portTab .nav-tabs li a:hover {
+    background: #5828fa;
+    color: #fff;
+    border: none;
+}
+
+.portTab .nav-tabs li.active a,
+.portTab .nav-tabs li.active a:focus,
+.portTab .nav-tabs li.active a:hover {
+    border: none;
+    background: #5828fa;
+    color: #fff;
+}
+
+.portTab .tab-content {
+    font-size: 14px;
+    color: #686868;
+    line-height: 25px;
+    text-align: left;
+    padding: 5px 20px;
+    margin-top: 30px;
+}
+
+
+/* BANNER SHAPES =========================== */
+.allPagesBannerShape{
+    border-radius: 0 0 130px 130px;
+}

@@ -6,6 +6,7 @@ import Home from '../pages/Home';
 // BOOTSTRAP ====================================================
 import '../../node_modules/bootstrap/dist/css/bootstrap.min.css'
 import OurWork from '../pages/OurWork';
+import AboutUs from '../pages/AboutUs';
 
 function Routing() {
     return (
@@ -14,6 +15,7 @@ function Routing() {
                 <Routes>
                     <Route path="/" element={<Home />} />
                     <Route path="/OurWork" element={<OurWork />} />
+                    <Route path="/AboutUs" element={<AboutUs />} />
                 </Routes>
             </BrowserRouter>
         </>

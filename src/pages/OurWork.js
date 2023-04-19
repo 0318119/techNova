@@ -36,40 +36,49 @@ function OurWork() {
           </div>
         </div>
       </section>
-
-
-      <section>
+      
+      <section className='portTabSection'>
         <div className="container">
-          <div className="row">
-            <ul>
-              <button>Website Design</button>
-              <button>logo design</button>
-              <button>Motions graphics</button>
-              <button>stationery & branding</button>
-            </ul>
-          </div>
-          <div className="row">
-            <div className="col-12">
+          <div class="row">
+            <div class="col-lg-12">
+              <div class="portTab" role="tabpanel">
+                <ul class="nav nav-tabs" role="tablist">
+                  <li role="presentation" class="active"><a href="#webDesingPort" aria-controls="home" role="tab" data-toggle="tab"><span>Website Design</span> </a></li>
+                  <li role="presentation"><a href="#logoDesignPort" aria-controls="profile" role="tab" data-toggle="tab"><span>Logo Design</span></a></li>
+                  <li role="presentation"><a href="#CMS" aria-controls="messages" role="tab" data-toggle="tab"><span>Motions graphics</span></a></li>
+                  <li role="presentation"><a href="#DigitalMarketing" aria-controls="messages" role="tab" data-toggle="tab"><span>Digital Marketing</span></a></li>
+                  <li role="presentation"><a href="#APIServices" aria-controls="messages" role="tab" data-toggle="tab"><span>stationery & branding</span></a></li>
+                </ul>
 
+
+                <div class="tab-content tabs">
+                  <div role="tabpanel" class="tab-pane fade in active" id="webDesingPort">
+                    <Gallery photos={photos} onClick={openLightbox} />
+                    <ModalGateway>
+                      {viewerIsOpen ? (
+                        <Modal onClose={closeLightbox}>
+                          <Carousel
+                            currentIndex={currentImage}
+                            views={photos.map(x => ({
+                              ...x,
+                              srcset: x.srcSet,
+                              caption: x.title
+                            }))}
+                          />
+                        </Modal>
+                      ) : null}
+                    </ModalGateway>
+                  </div>
+
+                  <div role="tabpanel" class="tab-pane fade" id="logoDesignPort">
+                  </div>
+
+                </div>
+              </div>
             </div>
           </div>
         </div>
       </section>
-      <Gallery photos={photos} onClick={openLightbox} />
-        <ModalGateway>
-          {viewerIsOpen ? (
-            <Modal onClose={closeLightbox}>
-              <Carousel
-                currentIndex={currentImage}
-                views={photos.map(x => ({
-                  ...x,
-                  srcset: x.srcSet,
-                  caption: x.title
-                }))}
-              />
-            </Modal>
-          ) : null}
-        </ModalGateway>
     </>
   )
 }

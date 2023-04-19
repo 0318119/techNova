@@ -119,7 +119,7 @@ function NavBar() {
                     <li><Link to="/">Home</Link></li>
                     <li><Link to="/OurWork">Our work</Link></li>
                     <li><Link to="">Services <Right_arrow /></Link></li>
-                    <li><Link to="">About us</Link></li>
+                    <li><Link to="/AboutUs">About us</Link></li>
                     <li><Link to="">Our reviews</Link></li>
                     <li><Link to="">Contact us</Link></li>
                     <li><Link to="">Career</Link></li>
