@@ -13,7 +13,6 @@ import img9 from './images/award/09.webp'
 import img10 from './images/award/10.webp'
 import img11 from './images/award/11.webp'
 import img12 from './images/award/12.webp'
-import img13 from './images/award/13.webp'
 import img14 from './images/award/14.webp'
 import img15 from './images/award/15.webp'
 import img16 from './images/award/16.webp'
@@ -107,9 +106,6 @@ class SliderAwarded extends Component {
                     </div>
                     <div>
                         <img src={img12} alt="" />
-                    </div>
-                    <div>
-                        <img src={img13} alt="" />
                     </div>
                     <div>
                         <img src={img14} alt="" />

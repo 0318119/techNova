@@ -1,0 +1,71 @@
+.questionSection #questionsSecBgClor {
+  padding: 20px;
+  background: rgba(13, 202, 240, 0.0784313725);
+}
+.questionSection .questionBox {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.questionSection .questionBox .questionBoxLeftArea .innerEmailQuestionBox {
+  display: flex;
+  align-items: center;
+  margin-top: 20px;
+}
+.questionSection .questionBox .questionBoxLeftArea .innerEmailQuestionBox span {
+  font-weight: 700;
+  font-size: 20px;
+}
+.questionSection .questionBox .questionBoxLeftArea .innerEmailQuestionBox a {
+  font-size: 18px;
+  padding: 0;
+  margin: 0;
+  color: #5828F9;
+}
+.questionSection .questionBox .questionBoxLeftArea button {
+  margin-top: 30px;
+  color: black;
+  background-color: yellow;
+  font-family: "Raleway", sans-serif;
+  font-size: 15px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  padding: 10px 15px;
+  border-radius: 0;
+  border: 2px solid #444;
+  position: relative;
+  z-index: 1;
+  transition: all 0.3s ease-in-out;
+  box-shadow: 10px 11px 29px rgba(0, 0, 0, 0.5607843137);
+}
+.questionSection .questionBox .questionBoxLeftArea button:focus, .questionSection .questionBox .questionBoxLeftArea button:hover {
+  color: white;
+  background-color: transparent;
+  border-radius: 0 15px;
+  border-color: white;
+  background: black;
+}
+.questionSection .questionBox .questionBoxLeftArea button::before {
+  content: "";
+  background: linear-gradient(to right bottom, white 50%, transparent 51%);
+  width: 50%;
+  height: 100%;
+  opacity: 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  transition: all 0.3s ease;
+}
+.questionSection .questionBox .questionBoxLeftArea button:focus:before, .questionSection .questionBox .questionBoxLeftArea button:hover:before {
+  width: 25px;
+  height: 25px;
+  opacity: 1;
+  left: -2px;
+  top: -2px;
+}
+.questionSection .questionBox .questionBoxRightArea img {
+  padding: 40px 0;
+}/*# sourceMappingURL=questionspage.module.css.map */

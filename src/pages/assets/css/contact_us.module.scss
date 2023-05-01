@@ -1,0 +1,91 @@
+// COLORS =============================================
+@import 'color';
+
+#bgBanner {
+    background-image: url(../../../components/images/innerBaner.webp), $backgorundLinear !important;
+    background-size: cover;
+    background-blend-mode: screen;
+}
+
+// =====================
+.contactTxtBannerBox{
+    color: $textColorWhite;
+        margin-top: 100px;
+        padding-bottom: 100px;
+        text-align: center;
+    
+        h5 {
+            font-size: 50px;
+        }
+    
+        p {
+            font-size: 20px;
+            margin-top: 20px;
+            padding: 0 80px;
+        }
+}
+
+// ===============================
+.contactItemsSection{
+    position: relative;
+        top: -50px;
+}
+
+.contactItemBox{
+display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    box-shadow: -3px 10px 10px $shadowColor;
+    padding: 32px 0;
+    border-radius: 10px;
+    border-left: 18px solid black;
+    background: $textColorWhite;
+    svg{
+            color: $blueTxtColor;
+                font-size: 69px;
+                border: 1px solid #80808042;
+                padding: 12px;
+                border-radius: 18px;
+    }
+    .contactInnerItemBox{
+        h5{
+        margin-bottom: 10px;
+        }
+        a{
+            color: black;
+        }
+    }
+}
+
+
+// ============================
+.awardSection{
+    margin-top: 40px;
+    padding: 20px;
+    .awardedHead{
+            text-align: center;
+            font-size: 40px;
+            font-weight: 600;
+            margin: 0 auto 45px auto;
+            display: inline;
+            border: 1px solid #6c757d40;
+            width: max-content;
+            border-radius: 20px;
+            padding: 5px 30px 11px 30px;
+    }
+    .awardImgBox{
+            display: flex;
+                justify-content: center;
+                align-items: center;
+                flex-direction: column;
+        img{
+            height: 100px;
+                width: 100px
+        }
+        span{
+            font-weight: 600;
+                text-align: center;
+                margin-top: 5px;
+        }
+    }
+}

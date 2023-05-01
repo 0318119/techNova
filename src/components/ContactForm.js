@@ -1,6 +1,6 @@
 import React from 'react'
 // ==================================
-import about_style from '../pages/assets/css/about.module.css'
+import contact_style from '../components/css/contactForm.module.css'
 // ========================================
 import { BsFillCheckCircleFill as Approve_ico } from "react-icons/bs";
 
@@ -8,11 +8,11 @@ import { BsFillCheckCircleFill as Approve_ico } from "react-icons/bs";
 function ContactForm() {
   return (
     <>
-    <section className={about_style.contactFormSection}>
+    <section className={contact_style.contactFormSection}>
         <div className="container">
             <div className="row">
                 <div className="col-lg-6">
-                    <div className={`${about_style.contactLeftArea}`}>
+                    <div className={`${contact_style.contactLeftArea}`}>
                         <h5>
                             Best Solution As Per Your Business Needs
                         </h5>
@@ -28,10 +28,10 @@ function ContactForm() {
                     </div>
                 </div>
                 <div className="col-lg-5">
-                    <div className={`${about_style.contactRightArea}`}>
+                    <div className={`${contact_style.contactRightArea}`}>
                         <h5>Get Free Consultancy</h5>
                         <form>
-                            <div className={`${about_style.formFlexBox}`}>
+                            <div className={`${contact_style.formFlexBox}`}>
                                 <div className="form-group">
                                     <label>Your Name</label>
                                     <input type="text" className="form-control" placeholder="Enter Your Name" required/>
@@ -69,7 +69,7 @@ function ContactForm() {
                                 <input type="checkbox" className="form-check-input" id="exampleCheck1" />
                                 <label className="form-check-label" for="exampleCheck1">Term & Conditions Apply</label>
                             </div>
-                            <button type='submit' className={`${about_style.submitBtn}`}>Submit</button>
+                            <button type='submit' className={`${contact_style.submitBtn}`}>Submit</button>
                         </form>
                     </div>
                 </div>

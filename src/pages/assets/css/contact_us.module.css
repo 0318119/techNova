@@ -1,0 +1,81 @@
+#bgBanner {
+  background-image: url(../../../components/images/innerBaner.webp), linear-gradient(120deg, #5828fa 0, #7119f1 20%, #8e06e6 100%) !important;
+  background-size: cover;
+  background-blend-mode: screen;
+}
+
+.contactTxtBannerBox {
+  color: white;
+  margin-top: 100px;
+  padding-bottom: 100px;
+  text-align: center;
+}
+.contactTxtBannerBox h5 {
+  font-size: 50px;
+}
+.contactTxtBannerBox p {
+  font-size: 20px;
+  margin-top: 20px;
+  padding: 0 80px;
+}
+
+.contactItemsSection {
+  position: relative;
+  top: -50px;
+}
+
+.contactItemBox {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  box-shadow: -3px 10px 10px rgba(128, 128, 128, 0.4588235294);
+  padding: 32px 0;
+  border-radius: 10px;
+  border-left: 18px solid black;
+  background: white;
+}
+.contactItemBox svg {
+  color: #5828F9;
+  font-size: 69px;
+  border: 1px solid rgba(128, 128, 128, 0.2588235294);
+  padding: 12px;
+  border-radius: 18px;
+}
+.contactItemBox .contactInnerItemBox h5 {
+  margin-bottom: 10px;
+}
+.contactItemBox .contactInnerItemBox a {
+  color: black;
+}
+
+.awardSection {
+  margin-top: 40px;
+  padding: 20px;
+}
+.awardSection .awardedHead {
+  text-align: center;
+  font-size: 40px;
+  font-weight: 600;
+  margin: 0 auto 45px auto;
+  display: inline;
+  border: 1px solid rgba(108, 117, 125, 0.2509803922);
+  width: -moz-max-content;
+  width: max-content;
+  border-radius: 20px;
+  padding: 5px 30px 11px 30px;
+}
+.awardSection .awardImgBox {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.awardSection .awardImgBox img {
+  height: 100px;
+  width: 100px;
+}
+.awardSection .awardImgBox span {
+  font-weight: 600;
+  text-align: center;
+  margin-top: 5px;
+}/*# sourceMappingURL=contact_us.module.css.map */

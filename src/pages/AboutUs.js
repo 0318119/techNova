@@ -7,6 +7,7 @@ import AboutBox from '../components/AboutBox'
 import aboutImg from '../components/images/about-sec.webp'
 import { BsFillCheckCircleFill as Approve_ico } from "react-icons/bs";
 import ContactForm from '../components/ContactForm'
+import Testimonials from '../components/Testimonials'
 import Footer from '../components/Footer'
 
 
@@ -76,6 +77,7 @@ function AboutUs() {
       </section>
 
       <AboutBox />
+      <Testimonials />
       <ContactForm />
       <Footer />
     </>
