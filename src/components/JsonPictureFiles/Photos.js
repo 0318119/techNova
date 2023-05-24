@@ -1,6 +1,9 @@
+
+import React from 'react';
+import imgWeb from '../images/portfolio/web/1.webp'
 export const photos = [
     {
-      src: "https://source.unsplash.com/Dm-qxdynoEc/800x799",
+      src: imgWeb,
       width: 4,
       height: 3,
     },

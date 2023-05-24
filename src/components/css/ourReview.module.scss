@@ -1,2 +1,81 @@
 // COLORS =======================================
 @import 'color';
+
+#Banner{
+        background-image: url(../images/innerBaner.webp), $backgorundLinear !important;
+        background-size: cover;
+        background-blend-mode: screen;
+
+        .bannerContentBox{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 50px 0;            
+            h3{
+                font-size: 65px;
+                color: $textColorWhite;
+            }
+            p{
+                text-align: center;
+                color: $textColorWhite;
+                padding-top: 10px;
+                font-size: 20px;
+            }
+        }
+}
+
+
+// REVIEW BOX =================================
+.reviewBoxSection{
+    margin-top: 150px;
+}
+.reviewBox{
+    border: 1px solid rgba(128, 128, 128, 0.4588235294);
+    padding: 17px 20px;
+    background: rgba(128, 128, 128, 0.0784313725);
+    border-radius: 40px 40px 40px 0;
+    margin-bottom: 50px;
+    img {
+        height: 80px;
+        width: 80px;
+        transform: rotate(180deg);
+    }
+    h4{
+        margin-top: 20px;
+        font-size: 35px;
+    }
+    .reviewScrollBox{
+        margin-top: 20px;
+        p{
+            font-size: 18px;
+        }
+    }
+}
+
+.nameLogoBox {
+    display: flex;
+    h3 {
+        font-size: 40px;
+        background: $backgorundLinear;
+        color: $textColorWhite;
+        padding: 12px 30px;
+        border-radius: 50%;
+    }
+    h5 {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin-left: 40px;
+        span:nth-child(1){
+            font-size: 30px;
+            font-weight: 600;
+        }
+        span:nth-child(2) {
+            margin-top: 5px;
+        }
+    }
+}
+
+#reviewColBox{
+    margin-top: 150px;
+}

@@ -7,7 +7,9 @@ import TechNoveAbout from '../components/TechNoveAbout'
 import ServeIndustries from '../components/ServeIndustries'
 import HomeTabs from '../components/HomeTabs'
 import Testimonials from '../components/Testimonials'
+import ContactForm from '../components/ContactForm'
 import Footer from '../components/Footer'
+import RequestForm from '../components/RequestForm'
 
 function Home() {
   return (
@@ -18,7 +20,9 @@ function Home() {
     <TechNoveAbout />
     <ServeIndustries />
     <HomeTabs />
+    <RequestForm />
     <Testimonials />
+    <ContactForm />
     <Footer />
     </>
   )

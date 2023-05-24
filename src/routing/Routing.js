@@ -9,6 +9,7 @@ import OurWork from '../pages/OurWork';
 import AboutUs from '../pages/AboutUs';
 import Contact from '../pages/Contact';
 import OurReview from '../pages/OurReview';
+import WebDesign from '../pages/WebDesign';
 
 function Routing() {
     return (
@@ -20,7 +21,7 @@ function Routing() {
                     <Route path="/AboutUs" element={<AboutUs />} />
                     <Route path="/Contact" element={<Contact />} />
                     <Route path="/OurReview" element={<OurReview />} />
-
+                    <Route path="/WebDesign" element={<WebDesign />} />
                 </Routes>
             </BrowserRouter>
         </>

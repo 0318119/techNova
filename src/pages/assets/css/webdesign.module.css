@@ -1,0 +1,622 @@
+#bgBanner {
+  background-image: url(../../../components/images/innerBaner.webp), linear-gradient(120deg, #5828fa 0, #7119f1 20%, #8e06e6 100%) !important;
+  background-size: cover;
+  background-blend-mode: screen;
+}
+
+.webDesignBox {
+  margin-top: 100px;
+  color: white;
+  margin-bottom: 200px;
+}
+.webDesignBox h5 {
+  font-size: 60px;
+}
+.webDesignBox p {
+  font-size: 18px;
+  margin-top: 10px;
+}
+.webDesignBox ul.webDesignList {
+  display: flex;
+  flex-direction: column;
+  line-height: 30px;
+}
+.webDesignBox ul.webDesignList li {
+  display: flex;
+  align-items: center;
+  font-weight: 600;
+}
+.webDesignBox ul.webDesignList li svg {
+  color: yellow;
+  margin-right: 10px;
+}
+.webDesignBox .btnBox {
+  margin-top: 50px;
+}
+.webDesignBox .btnBox button {
+  color: black;
+  background-color: yellow;
+  font-family: "Raleway", sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  padding: 15px 20px;
+  border-radius: 0;
+  border: 2px solid #444;
+  position: relative;
+  z-index: 1;
+  transition: all 0.3s ease-in-out;
+  box-shadow: 10px 11px 29px rgba(0, 0, 0, 0.5607843137);
+}
+.webDesignBox .btnBox button:focus, .webDesignBox .btnBox button:hover {
+  color: white;
+  background-color: transparent;
+  border-radius: 0 15px;
+  border-color: white;
+  background: black;
+}
+.webDesignBox .btnBox button::before {
+  content: "";
+  background: linear-gradient(to right bottom, white 50%, transparent 51%);
+  width: 50%;
+  height: 100%;
+  opacity: 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  transition: all 0.3s ease;
+}
+.webDesignBox .btnBox button:focus:before, .webDesignBox .btnBox button:hover:before {
+  width: 25px;
+  height: 25px;
+  opacity: 1;
+  left: -2px;
+  top: -2px;
+}
+.webDesignBox .btnBox button.btnTwo {
+  margin-left: 40px;
+}
+
+@keyframes zoom {
+  0% {
+    transform: scale(1, 1);
+  }
+  50% {
+    transform: scale(1.1, 1.1);
+  }
+  100% {
+    transform: scale(1, 1);
+  }
+}
+.webDesignImgBox {
+  position: relative;
+}
+.webDesignImgBox img {
+  position: absolute;
+  width: 65%;
+  top: 50px;
+  right: 0;
+  animation: zoom 2s ease-out infinite;
+}
+
+.customerSection {
+  margin-top: 100px;
+}
+.customerSection #boxRow {
+  justify-content: space-between;
+}
+.customerSection .cusSupportHead {
+  text-align: center;
+  font-size: 50px;
+  font-weight: 500;
+}
+.customerSection .cusSupportDes {
+  margin-top: 12px;
+  text-align: center;
+  font-size: 17px;
+}
+.customerSection .customerSuportMainBox {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 50px;
+  background: linear-gradient(127deg, #5828fa 20%, #dc3545 100%);
+  color: white;
+  padding: 20px 0;
+  border-radius: 20px;
+  box-shadow: 10px 10px 10px rgba(128, 128, 128, 0.4588235294);
+}
+.customerSection .customerSuportMainBox span {
+  text-align: center;
+}
+
+.webDescribeSection {
+  margin-top: 200px;
+}
+.webDescribeSection .webDescribeMainBox {
+  position: relative;
+}
+.webDescribeSection .webDescribePointsBox {
+  position: absolute;
+  bottom: -20px;
+  right: 18%;
+  width: auto;
+  background-color: white;
+  box-shadow: 10px 10px 10px rgba(128, 128, 128, 0.4588235294);
+}
+.webDescribeSection .webDescribePointsBox .webDescribePointsIconBox {
+  position: absolute;
+  top: -50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  background: linear-gradient(120deg, #5828fa 0, #7119f1 20%, #8e06e6 100%);
+}
+.webDescribeSection .webDescribePointsBox .webDescribePointsIconBox img {
+  height: 70px;
+  filter: brightness(0) saturate(100%) invert(95%) sepia(100%) saturate(2%) hue-rotate(61deg) brightness(110%) contrast(100%);
+  padding: 9px 20px;
+}
+.webDescribeSection .webDescribePointsBox ul {
+  padding: 35px 15px 10px 15px;
+  line-height: 40px;
+}
+.webDescribeSection .webDescribePointsBox ul li {
+  font-size: 20px;
+  display: flex;
+  align-items: center;
+}
+.webDescribeSection .webDescribePointsBox ul li svg {
+  font-size: 22px;
+  margin-right: 10px;
+  color: yellow;
+}
+
+.webDescribeContentBox h5 {
+  margin-bottom: 50px;
+  font-weight: 600;
+  font-size: 38px;
+}
+.webDescribeContentBox h6 {
+  margin-bottom: 34px;
+  font-size: 26px;
+  font-weight: 800;
+}
+.webDescribeContentBox p {
+  font-size: 17px;
+  line-height: 29px;
+}
+.webDescribeContentBox .webDescribeBtnBox {
+  width: 70%;
+  margin-top: 50px;
+  display: flex;
+  justify-content: space-between;
+}
+.webDescribeContentBox .webDescribeBtnBox button {
+  color: black;
+  background-color: yellow;
+  font-size: 18px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  padding: 10px 21px;
+  border-radius: 0;
+  position: relative;
+  z-index: 1;
+  transition: all 0.3s ease-in-out;
+  box-shadow: 10px 11px 29px rgba(0, 0, 0, 0.5607843137);
+}
+.webDescribeContentBox .webDescribeBtnBox button:focus, .webDescribeContentBox .webDescribeBtnBox button:hover {
+  color: white;
+  background-color: transparent;
+  border-radius: 0 15px;
+  border-color: white;
+  background: black;
+}
+.webDescribeContentBox .webDescribeBtnBox button::before {
+  content: "";
+  background: linear-gradient(to right bottom, white 50%, transparent 51%);
+  width: 50%;
+  height: 100%;
+  opacity: 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  transition: all 0.3s ease;
+}
+.webDescribeContentBox .webDescribeBtnBox button:focus:before, .webDescribeContentBox .webDescribeBtnBox button:hover:before {
+  width: 25px;
+  height: 25px;
+  opacity: 1;
+  left: -2px;
+  top: -2px;
+}
+
+.webTabsSection {
+  margin-top: 150px;
+  background: linear-gradient(120deg, #5828fa 0, #7119f1 20%, #8e06e6 100%);
+}
+.webTabsSection .webTabsBox {
+  margin-top: 80px;
+}
+.webTabsSection .webTabsBox .webTabsMenuBox {
+  display: flex;
+  justify-content: space-between;
+  background-color: white;
+  padding: 10px 10px;
+  border-radius: 10px;
+  box-shadow: 10px 10px 10px black;
+}
+.webTabsSection .webTabsBox .webTabsMenuBox .webTabsMenu {
+  background: yellow;
+  text-transform: capitalize;
+  color: black;
+  font-weight: 700;
+  font-size: 20px;
+  padding: 10px 15px;
+  cursor: pointer;
+}
+.webTabsSection .webTabsBox .webTabsMenuBox .webTabsMenu:focus {
+  outline: none;
+}
+
+.webTabsSection .webTabBox {
+  background: white;
+  margin-top: 50px;
+}
+.webTabsSection .webTabBox .innerWebTabBox {
+  display: flex;
+  align-items: center;
+}
+.webTabsSection .webTabBox .innerWebTabBox .webTabFlexBox {
+  padding-left: 20px;
+  padding-right: 80px;
+}
+.webTabsSection .webTabBox .innerWebTabBox .webTabFlexBox h3 {
+  font-size: 45px;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+.webTabsSection .webTabBox .innerWebTabBox .webTabFlexBox p {
+  margin-top: 30px;
+  font-size: 20px;
+  font-weight: 500;
+}
+.webTabsSection .webTabBox .innerWebTabBox .webTabFlexBox .webTabBtnBox {
+  margin-top: 50px;
+}
+.webTabsSection .webTabBox .innerWebTabBox .webTabFlexBox .webTabBtnBox button:nth-child(2) {
+  margin-left: 30px;
+}
+.webTabsSection .webTabBox .innerWebTabBox .webTabFlexBox .webTabBtnBox button {
+  color: black;
+  background-color: yellow;
+  font-family: "Raleway", sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  padding: 15px 20px;
+  border-radius: 0;
+  position: relative;
+  z-index: 1;
+  transition: all 0.3s ease-in-out;
+  box-shadow: 10px 11px 29px rgba(0, 0, 0, 0.5607843137);
+}
+.webTabsSection .webTabBox .innerWebTabBox .webTabFlexBox .webTabBtnBox button:focus, .webTabsSection .webTabBox .innerWebTabBox .webTabFlexBox .webTabBtnBox button:hover {
+  color: white;
+  background-color: transparent;
+  border-radius: 0 15px;
+  border-color: white;
+  background: black;
+}
+.webTabsSection .webTabBox .innerWebTabBox .webTabFlexBox .webTabBtnBox button::before {
+  content: "";
+  background: linear-gradient(to right bottom, white 50%, transparent 51%);
+  width: 50%;
+  height: 100%;
+  opacity: 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  transition: all 0.3s ease;
+}
+.webTabsSection .webTabBox .innerWebTabBox .webTabFlexBox .webTabBtnBox button:focus:before, .webTabsSection .webTabBox .innerWebTabBox .webTabFlexBox .webTabBtnBox button:hover:before {
+  width: 25px;
+  height: 25px;
+  opacity: 1;
+  left: -2px;
+  top: -2px;
+}
+.webTabsSection .webTabBox .innerWebTabBox img {
+  height: 450px;
+  width: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+  padding-right: 10px;
+}
+
+.webPortfolioSection {
+  background-image: url(../../../components/images/portfoliobg2.jpg.webp);
+  padding: 50px 0;
+}
+.webPortfolioSection .webPortfolioMainBox .webPortfolioHeadBox {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  color: white;
+}
+.webPortfolioSection .webPortfolioMainBox .webPortfolioHeadBox h5 {
+  font-size: 40px;
+  font-weight: 600;
+}
+.webPortfolioSection .webPortfolioMainBox .webPortfolioHeadBox p {
+  margin-top: 10px;
+}
+.webPortfolioSection .webPortfolioImagesBox {
+  margin-top: 30px;
+}
+
+.WebPackagesSection {
+  padding-top: 50px;
+  background: linear-gradient(to top right, black 50%, rgba(0, 0, 0, 0.9490196078) 50%);
+}
+.WebPackagesSection .webPackagesHeadBox {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: white;
+}
+.WebPackagesSection .webPackagesHeadBox h5 {
+  font-size: 40px;
+  font-weight: 600;
+}
+.WebPackagesSection .webPackagesHeadBox p {
+  margin-top: 30px;
+  padding: 0 100px;
+  text-align: center;
+  font-size: 21px;
+}
+.WebPackagesSection .pricingTable {
+  background: #fff;
+  text-align: center;
+  padding: 0 0 40px;
+  margin: 20px 15px;
+}
+.WebPackagesSection .pricingTable .pricingTable_header {
+  color: #fff;
+  background: linear-gradient(to top right, #7905c5 50%, #8e06e6 50%);
+  padding: 30px 0 28px;
+  margin: 0 0 15px;
+  box-shadow: 0 5px 7px -1px rgba(0, 0, 0, 0.2);
+  outline: 2px solid #fff;
+  outline-offset: -15px;
+  position: relative;
+}
+.WebPackagesSection .pricingTable .pricingTable_header::after {
+  content: "";
+  background: linear-gradient(to top right, #7905c5 50%, transparent 50%);
+  width: 30px;
+  height: 30px;
+  box-shadow: -5px 5px 7px rgba(0, 0, 0, 0.2);
+  transform: translateX(-50%) rotate(-45deg);
+  position: absolute;
+  bottom: -15px;
+  left: 50%;
+}
+.WebPackagesSection .pricingTable .title {
+  color: white;
+  font-size: 35px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+.WebPackagesSection .pricingTable .price_value {
+  color: #7905c5;
+  margin: 0 0 15px;
+}
+.WebPackagesSection .pricingTable .price_value .amount {
+  font-size: 40px;
+  font-weight: 500;
+}
+.WebPackagesSection .pricingTable .price_value .duration {
+  font-size: 15px;
+  display: block;
+}
+.WebPackagesSection .pricingTable .content_list {
+  background: linear-gradient(to top right, #7905c5 50%, #8e06e6 50%);
+  padding: 30px 0;
+  margin: 0 0 35px;
+  outline: 2px solid #fff;
+  outline-offset: -15px;
+  list-style: none;
+  position: relative;
+  height: 400px;
+  overflow-y: scroll;
+}
+.WebPackagesSection .pricingTable .content_list::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+}
+.WebPackagesSection .pricingTable .content_list::-webkit-scrollbar {
+  width: 5px;
+  background: transparent;
+}
+.WebPackagesSection .pricingTable .content_list::-webkit-scrollbar-thumb {
+  background-color: #F90;
+  background-image: -webkit-linear-gradient(45deg, rgba(255, 255, 255, 0.2) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.2) 50%, rgba(255, 255, 255, 0.2) 75%, transparent 75%, transparent);
+}
+.WebPackagesSection .pricingTable .content_list li {
+  color: white;
+  font-size: 15px;
+  font-weight: 500;
+  line-height: 25px;
+  text-align: left;
+  text-transform: capitalize;
+  padding: 5px 5px 5px 30px;
+  margin: 0 19px 10px;
+  position: relative;
+}
+.WebPackagesSection .pricingTable .pricingTable_Btn button {
+  color: white;
+  background-color: #7905c5;
+  font-family: "Raleway", sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  padding: 15px 20px;
+  border-radius: 0;
+  position: relative;
+  z-index: 1;
+  transition: all 0.3s ease-in-out;
+  box-shadow: 10px 11px 29px rgba(0, 0, 0, 0.5607843137);
+}
+.WebPackagesSection .pricingTable .pricingTable_Btn button:focus, .WebPackagesSection .pricingTable .pricingTable_Btn button:hover {
+  color: white;
+  background-color: transparent;
+  border-radius: 0 15px;
+  border-color: white;
+  background: black;
+}
+.WebPackagesSection .pricingTable .pricingTable_Btn button::before {
+  content: "";
+  background: linear-gradient(to right bottom, yellow 50%, transparent 51%);
+  width: 50%;
+  height: 100%;
+  opacity: 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  transition: all 0.3s ease;
+}
+.WebPackagesSection .pricingTable .pricingTable_Btn button:focus:before, .WebPackagesSection .pricingTable .pricingTable_Btn button:hover:before {
+  width: 25px;
+  height: 25px;
+  opacity: 1;
+  left: -2px;
+  top: -2px;
+}
+
+.designProcessSection {
+  margin-top: 100px;
+}
+
+.designProcessHeadBox h5 {
+  font-size: 45px;
+  font-weight: 600;
+  text-align: center;
+}
+
+.designProcessBox {
+  margin-top: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  position: relative;
+  padding: 30px 15px;
+}
+.designProcessBox::after {
+  content: "";
+  position: absolute;
+  top: 0%;
+  right: 0;
+  height: 33%;
+  width: 100%;
+  border-top: 5px solid #5828F9;
+  border-right: 5px solid #5828F9;
+  border-radius: 0 20px 0 78px;
+}
+.designProcessBox::before {
+  content: "";
+  position: absolute;
+  bottom: 0%;
+  left: 0;
+  height: 33%;
+  width: 100%;
+  border-bottom: 5px solid #5828F9;
+  border-left: 5px solid #5828F9;
+  border-radius: 0 0 0 20px;
+}
+.designProcessBox img {
+  height: 80px;
+}
+.designProcessBox h5 {
+  margin-top: 26px;
+  font-weight: 700;
+  font-size: 30px;
+}
+.designProcessBox p {
+  text-align: center;
+  margin-top: 19px;
+}
+
+.webProveSection {
+  background-image: url(../../../pages/assets/images/greybg.webp);
+  background-size: cover;
+  padding: 50px 0;
+  margin-top: 10px;
+}
+.webProveSection .webProveBox h5 {
+  font-size: 40px;
+  font-weight: 700;
+  color: white;
+}
+.webProveSection .webProveBox p {
+  margin-top: 10px;
+  color: white;
+  font-size: 20px;
+  padding-right: 80px;
+}
+.webProveSection .webProveBox button {
+  color: black;
+  background-color: yellow;
+  font-family: "Raleway", sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  padding: 15px 20px;
+  border-radius: 0;
+  position: relative;
+  z-index: 1;
+  transition: all 0.3s ease-in-out;
+  box-shadow: 10px 11px 29px rgba(0, 0, 0, 0.5607843137);
+}
+.webProveSection .webProveBox button:focus, .webProveSection .webProveBox button:hover {
+  color: white;
+  background-color: transparent;
+  border-radius: 0 15px;
+  border-color: white;
+  background: black;
+}
+.webProveSection .webProveBox button::before {
+  content: "";
+  background: linear-gradient(to right bottom, white 50%, transparent 51%);
+  width: 50%;
+  height: 100%;
+  opacity: 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  transition: all 0.3s ease;
+}
+.webProveSection .webProveBox button:focus:before, .webProveSection .webProveBox button:hover:before {
+  width: 25px;
+  height: 25px;
+  opacity: 1;
+  left: -2px;
+  top: -2px;
+}
+.webProveSection .webProveBox img {
+  height: 500px;
+  -o-object-fit: contain;
+     object-fit: contain;
+}/*# sourceMappingURL=webdesign.module.css.map */

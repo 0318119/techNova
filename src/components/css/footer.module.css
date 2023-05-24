@@ -1,6 +1,6 @@
 .footerSection {
   background: linear-gradient(120deg, #5828fa 0, #7119f1 20%, #8e06e6 100%);
-  margin-top: 50px;
+  border-top: 1px solid white;
   padding: 120px 0 20px 0;
   position: relative;
   display: flex;

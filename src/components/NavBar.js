@@ -122,7 +122,7 @@ function NavBar() {
                     <li><Link to="/AboutUs">About us</Link></li>
                     <li><Link to="/OurReview">Our reviews</Link></li>
                     <li><Link to="/Contact">Contact us</Link></li>
-                    <li className='border-0'><a href="">Get a quote</a></li>
+                    <li className='border-0'><Link to="/Contact">Get a quote</Link></li>
                   </ul>
                 </div>
 
@@ -135,7 +135,7 @@ function NavBar() {
                 <div className={`${style_Nav.innerDropDownBox}`}>
                   <ul>
                     <h4>Web Development</h4>
-                    <li><Link href="">Web Design</Link></li>
+                    <li><Link to="/WebDesign">Web Design</Link></li>
                     <li><Link href="">Email Templates</Link></li>
                     <li><Link href="">Landing Page</Link></li>
                     <li><Link href="">UX Design</Link></li>

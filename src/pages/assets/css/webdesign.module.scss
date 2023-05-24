@@ -1,0 +1,718 @@
+// COLORS =============================================
+@import 'color';
+
+#bgBanner {
+    background-image: url(../../../components/images/innerBaner.webp), $backgorundLinear !important;
+    background-size: cover;
+    background-blend-mode: screen;
+}
+
+// ==============================
+.webDesignBox {
+    margin-top: 100px;
+    color: $textColorWhite;
+    margin-bottom: 200px;
+
+    h5 {
+        font-size: 60px;
+    }
+
+    p {
+        font-size: 18px;
+        margin-top: 10px;
+    }
+
+    ul.webDesignList {
+        display: flex;
+        flex-direction: column;
+        line-height: 30px;
+
+        li {
+            display: flex;
+            align-items: center;
+            font-weight: 600;
+
+            svg {
+                color: $bgYellowColor;
+                margin-right: 10px;
+            }
+        }
+    }
+
+    .btnBox {
+        margin-top: 50px;
+
+        button {
+            color: black;
+            background-color: yellow;
+            font-family: "Raleway", sans-serif;
+            font-size: 18px;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            padding: 15px 20px;
+            border-radius: 0;
+            border: 2px solid #444;
+            position: relative;
+            z-index: 1;
+            transition: all 0.3s ease-in-out;
+            box-shadow: 10px 11px 29px #0000008f;
+
+            &:focus,
+            &:hover {
+                color: white;
+                background-color: transparent;
+                border-radius: 0 15px;
+                border-color: white;
+                background: black;
+            }
+
+            &::before {
+                content: "";
+                background: linear-gradient(to right bottom, white 50%, transparent 51%);
+                width: 50%;
+                height: 100%;
+                opacity: 0;
+                position: absolute;
+                top: 0;
+                left: 0;
+                z-index: -1;
+                transition: all 0.3s ease;
+            }
+
+            &:focus:before,
+            &:hover:before {
+                width: 25px;
+                height: 25px;
+                opacity: 1;
+                left: -2px;
+                top: -2px;
+            }
+
+        }
+
+        button.btnTwo {
+            margin-left: 40px;
+        }
+    }
+}
+
+// ======================================
+@keyframes zoom {
+    0% {
+        transform: scale(1, 1);
+    }
+
+    50% {
+        transform: scale(1.1, 1.1);
+    }
+
+    100% {
+        transform: scale(1, 1);
+    }
+}
+
+.webDesignImgBox {
+    position: relative;
+
+    img {
+        position: absolute;
+        width: 65%;
+        top: 50px;
+        right: 0;
+        animation: zoom 2s ease-out infinite;
+    }
+}
+
+
+// ===================================
+.customerSection {
+    margin-top: 100px;
+
+    #boxRow {
+        justify-content: space-between;
+    }
+
+    .cusSupportHead {
+        text-align: center;
+        font-size: 50px;
+        font-weight: 500;
+    }
+
+    .cusSupportDes {
+        margin-top: 12px;
+        text-align: center;
+        font-size: 17px;
+    }
+
+    .customerSuportMainBox {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 50px;
+        background: linear-gradient(127deg, #5828fa 20%, #dc3545 100%);
+        color: $textColorWhite;
+        padding: 20px 0;
+        border-radius: 20px;
+        box-shadow: 10px 10px 10px $shadowColor;
+
+        span {
+            text-align: center;
+        }
+    }
+}
+
+// =======================
+.webDescribeSection {
+    margin-top: 200px;
+
+    .webDescribeMainBox {
+        position: relative;
+    }
+
+    .webDescribePointsBox {
+        position: absolute;
+        bottom: -20px;
+        right: 18%;
+        width: auto;
+        background-color: white;
+        box-shadow: 10px 10px 10px $shadowColor;
+
+        .webDescribePointsIconBox {
+            position: absolute;
+            top: -50px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+            background: $backgorundLinear;
+
+            img {
+                height: 70px;
+                filter: brightness(0) saturate(100%) invert(95%) sepia(100%) saturate(2%) hue-rotate(61deg) brightness(110%) contrast(100%);
+                padding: 9px 20px;
+            }
+        }
+
+        ul {
+            padding: 35px 15px 10px 15px;
+            line-height: 40px;
+
+            li {
+                font-size: 20px;
+                display: flex;
+                align-items: center;
+
+                svg {
+                    font-size: 22px;
+                    margin-right: 10px;
+                    color: $bgYellowColor;
+                }
+            }
+        }
+    }
+}
+
+// =======================
+.webDescribeContentBox {
+    h5 {
+        margin-bottom: 50px;
+        font-weight: 600;
+        font-size: 38px;
+    }
+
+    h6 {
+        margin-bottom: 34px;
+        font-size: 26px;
+        font-weight: 800;
+    }
+
+    p {
+        font-size: 17px;
+        line-height: 29px;
+    }
+
+    .webDescribeBtnBox {
+        width: 70%;
+        margin-top: 50px;
+        display: flex;
+        justify-content: space-between;
+
+        button {
+            color: black;
+            background-color: yellow;
+            font-size: 18px;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            padding: 10px 21px;
+            border-radius: 0;
+            position: relative;
+            z-index: 1;
+            transition: all 0.3s ease-in-out;
+            box-shadow: 10px 11px 29px #0000008f;
+
+            &:focus,
+            &:hover {
+                color: white;
+                background-color: transparent;
+                border-radius: 0 15px;
+                border-color: white;
+                background: black;
+            }
+
+            &::before {
+                content: "";
+                background: linear-gradient(to right bottom, white 50%, transparent 51%);
+                width: 50%;
+                height: 100%;
+                opacity: 0;
+                position: absolute;
+                top: 0;
+                left: 0;
+                z-index: -1;
+                transition: all 0.3s ease;
+            }
+
+            &:focus:before,
+            &:hover:before {
+                width: 25px;
+                height: 25px;
+                opacity: 1;
+                left: -2px;
+                top: -2px;
+            }
+
+        }
+    }
+}
+// ======================
+.webTabsSection{
+    margin-top: 150px;
+    background: $backgorundLinear;
+    .webTabsBox{
+        margin-top: 80px;
+        .webTabsMenuBox{
+            display: flex;
+                justify-content: space-between;
+                background-color: white;
+                padding: 10px 10px;
+                border-radius: 10px;
+                box-shadow: 10px 10px 10px black;
+            .webTabsMenu{
+                background: $bgYellowColor;
+                text-transform: capitalize;
+                color: black;
+                font-weight: 700;
+                font-size: 20px;
+                padding: 10px 15px;
+                cursor: pointer;
+                &:focus{
+                    outline: none;
+                }
+            }
+        }
+    }
+}
+// ======================
+.webTabsSection{
+    .webTabBox{
+        background: white;
+        margin-top: 50px;
+        .innerWebTabBox{
+            display: flex;
+            align-items: center;
+            // margin-top: 50px;
+            .webTabFlexBox{
+                padding-left: 20px;
+                padding-right: 80px;
+                h3{
+                    font-size: 45px;
+                    font-weight: 700;
+                    margin-bottom: 10px;
+                }
+                p{
+                    margin-top: 30px;
+                    font-size: 20px;
+                    font-weight: 500;
+                }
+                .webTabBtnBox{
+                    margin-top: 50px;
+                    button:nth-child(2){
+                        margin-left: 30px;
+                    }
+                    button {
+                            color: black;
+                            background-color: yellow;
+                            font-family: "Raleway", sans-serif;
+                            font-size: 18px;
+                            font-weight: 700;
+                            text-transform: uppercase;
+                            letter-spacing: 1px;
+                            padding: 15px 20px;
+                            border-radius: 0;
+                            position: relative;
+                            z-index: 1;
+                            transition: all 0.3s ease-in-out;
+                            box-shadow: 10px 11px 29px #0000008f;
+                    
+                            &:focus,
+                            &:hover {
+                                color: white;
+                                background-color: transparent;
+                                border-radius: 0 15px;
+                                border-color: white;
+                                background: black;
+                            }
+                    
+                            &::before {
+                                content: "";
+                                background: linear-gradient(to right bottom, white 50%, transparent 51%);
+                                width: 50%;
+                                height: 100%;
+                                opacity: 0;
+                                position: absolute;
+                                top: 0;
+                                left: 0;
+                                z-index: -1;
+                                transition: all 0.3s ease;
+                            }
+                    
+                            &:focus:before,
+                            &:hover:before {
+                                width: 25px;
+                                height: 25px;
+                                opacity: 1;
+                                left: -2px;
+                                top: -2px;
+                            }
+                    
+                    }
+                }
+            }
+            img{
+                height: 450px;
+                width: 100%;
+                object-fit: contain;
+                padding-right: 10px;
+            }
+        }
+    }
+}
+// ======================
+.webPortfolioSection{
+    background-image: url(../../../components/images/portfoliobg2.jpg.webp);
+    padding: 50px 0;
+    .webPortfolioMainBox{
+        .webPortfolioHeadBox{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            color: $textColorWhite;
+            h5{
+                font-size: 40px;
+                font-weight: 600;
+            }
+            p{
+                margin-top: 10px;
+            }
+        }
+    }
+    .webPortfolioImagesBox{
+        margin-top: 30px;
+    }
+}
+// =====================
+.WebPackagesSection{
+    padding-top: 50px;
+    background: linear-gradient(to top right, black 50%, #000000f2 50%);;
+    .webPackagesHeadBox{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            color: $textColorWhite;
+            h5 {
+                font-size: 40px;
+                font-weight: 600;
+            }
+            p {
+                margin-top: 30px;
+                padding: 0 100px;
+                text-align: center;
+                font-size: 21px;
+            }
+    }
+    .pricingTable {
+        background: #fff;
+        text-align: center;
+        padding: 0 0 40px;
+        margin: 20px 15px;
+        .pricingTable_header {
+            color: #fff;
+            background: $TableBgLinear;
+            padding: 30px 0 28px;
+            margin: 0 0 15px;
+            box-shadow: 0 5px 7px -1px rgba(0, 0, 0, 0.2);
+            outline: 2px solid #fff;
+            outline-offset: -15px;
+            position: relative;
+            &::after{
+                content: "";
+                background: linear-gradient(to top right, #7905c5 50%, transparent 50%);
+                width: 30px;
+                height: 30px;
+                box-shadow: -5px 5px 7px rgba(0, 0, 0, 0.2);
+                transform: translateX(-50%) rotate(-45deg);
+                position: absolute;
+                bottom: -15px;
+                left: 50%;
+            }
+        }
+        .title {
+            color: $textColorWhite;
+            font-size: 35px;
+            font-weight: 700;
+            text-transform: uppercase;
+        }
+        .price_value {
+            color: #7905c5;
+            margin: 0 0 15px;
+            .amount {
+                font-size: 40px;
+                font-weight: 500;
+            }
+            .duration {
+                font-size: 15px;
+                display: block;
+            }
+        }
+        .content_list {
+            background: $TableBgLinear;
+            padding: 30px 0;
+            margin: 0 0 35px;
+            outline: 2px solid #fff;
+            outline-offset: -15px;
+            list-style: none;
+            position: relative;
+            height: 400px;
+            overflow-y: scroll;
+            &::-webkit-scrollbar-track {
+                    -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+                }
+            
+                &::-webkit-scrollbar {
+                    width: 5px;
+                    background: transparent;
+                }
+            
+                &::-webkit-scrollbar-thumb {
+                    background-color: #F90;
+                    background-image: -webkit-linear-gradient(45deg,
+                            rgba(255, 255, 255, .2) 25%,
+                            transparent 25%,
+                            transparent 50%,
+                            rgba(255, 255, 255, .2) 50%,
+                            rgba(255, 255, 255, .2) 75%,
+                            transparent 75%,
+                            transparent)
+                }
+            // &::after{
+            //     content: "";
+            //     background: linear-gradient(to top right, #7905c5 49%, transparent 50%);
+            //     width: 30px;
+            //     height: 30px;
+            //     box-shadow: -5px 5px 7px rgba(0, 0, 0, 0.2);
+            //     transform: translateX(-50%) rotate(-45deg);
+            //     position: absolute;
+            //     bottom: -15px;
+            //     left: 50%;
+            // }
+            li {
+                color: $textColorWhite;
+                font-size: 15px;
+                font-weight: 500;
+                line-height: 25px;
+                text-align: left;
+                text-transform: capitalize;
+                padding: 5px 5px 5px 30px;
+                margin: 0 19px 10px;
+                position: relative;
+            }
+        }
+        .pricingTable_Btn{
+            button {
+                color: $textColorWhite;
+                background-color: #7905c5;
+                font-family: "Raleway", sans-serif;
+                font-size: 18px;
+                font-weight: 700;
+                text-transform: uppercase;
+                letter-spacing: 1px;
+                padding: 15px 20px;
+                border-radius: 0;
+                position: relative;
+                z-index: 1;
+                transition: all 0.3s ease-in-out;
+                box-shadow: 10px 11px 29px #0000008f;
+
+                &:focus,
+                &:hover {
+                    color: white;
+                    background-color: transparent;
+                    border-radius: 0 15px;
+                    border-color: white;
+                    background: black;
+                }
+        
+                &::before {
+                    content: "";
+                    background: linear-gradient(to right bottom, yellow 50%, transparent 51%);
+                    width: 50%;
+                    height: 100%;
+                    opacity: 0;
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    z-index: -1;
+                    transition: all 0.3s ease;
+                }
+        
+                &:focus:before,
+                &:hover:before {
+                    width: 25px;
+                    height: 25px;
+                    opacity: 1;
+                    left: -2px;
+                    top: -2px;
+                }
+            }
+        }
+    }
+}
+
+// =================
+.designProcessSection{
+    margin-top: 100px;
+}
+ .designProcessHeadBox {
+     h5 {
+         font-size: 45px;
+         font-weight: 600;
+         text-align: center;
+     }
+ }
+.designProcessBox{
+        margin-top: 80px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        position: relative;
+        padding: 30px 15px;
+        &::after{
+        content: "";
+            position: absolute;
+            top: 0%;
+            right: 0;
+            height: 33%;
+            width: 100%;
+            border-top: 5px solid $blueTxtColor;
+            border-right: 5px solid $blueTxtColor;
+            border-radius: 0 20px 0 78px;
+        }
+        &::before {
+            content: "";
+            position: absolute;
+            bottom: 0%;
+            left: 0;
+            height: 33%;
+            width: 100%;
+            border-bottom: 5px solid $blueTxtColor;
+            border-left: 5px solid $blueTxtColor;
+            border-radius: 0 0 0 20px;
+        }
+    img{
+        height: 80px;
+    }
+    h5{
+        margin-top: 26px;
+        font-weight: 700;
+        font-size: 30px;
+    }
+    p{
+        text-align: center;
+        margin-top: 19px;
+    }
+}
+// =================
+.webProveSection{
+    background-image: url(../../../pages/assets/images/greybg.webp);
+    background-size: cover;
+    padding: 50px 0;
+    margin-top: 10px;
+    .webProveBox{
+        h5{
+            font-size: 40px;
+            font-weight: 700;
+            color: $textColorWhite;
+        }
+        p{
+            margin-top: 10px;
+            color: $textColorWhite;
+            font-size: 20px;
+            padding-right: 80px;
+        }
+                button {
+                    color: black;
+                    background-color: yellow;
+                    font-family: "Raleway", sans-serif;
+                    font-size: 18px;
+                    font-weight: 700;
+                    text-transform: uppercase;
+                    letter-spacing: 1px;
+                    padding: 15px 20px;
+                    border-radius: 0;
+                    position: relative;
+                    z-index: 1;
+                    transition: all 0.3s ease-in-out;
+                    box-shadow: 10px 11px 29px #0000008f;
+        
+                    &:focus,
+                    &:hover {
+                        color: white;
+                        background-color: transparent;
+                        border-radius: 0 15px;
+                        border-color: white;
+                        background: black;
+                    }
+        
+                    &::before {
+                        content: "";
+                        background: linear-gradient(to right bottom, white 50%, transparent 51%);
+                        width: 50%;
+                        height: 100%;
+                        opacity: 0;
+                        position: absolute;
+                        top: 0;
+                        left: 0;
+                        z-index: -1;
+                        transition: all 0.3s ease;
+                    }
+        
+                    &:focus:before,
+                    &:hover:before {
+                        width: 25px;
+                        height: 25px;
+                        opacity: 1;
+                        left: -2px;
+                        top: -2px;
+                    }
+        
+                }
+        img{
+            height: 500px;
+            object-fit: contain;
+        }
+    }
+}

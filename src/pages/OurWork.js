@@ -3,7 +3,8 @@ import NavBar from '../components/NavBar'
 import work from '../components/css/ourWork.module.css'
 import Gallery from "react-photo-gallery";
 import Carousel, { Modal, ModalGateway } from "react-images";
-import { photos } from "../pages/Photos";
+import { photos } from "../components/JsonPictureFiles/Photos";
+import RequestForm from '../components/RequestForm';
 
 function OurWork() {
   const [currentImage, setCurrentImage] = useState(0);
@@ -79,6 +80,7 @@ function OurWork() {
           </div>
         </div>
       </section>
+      <RequestForm />
     </>
   )
 }

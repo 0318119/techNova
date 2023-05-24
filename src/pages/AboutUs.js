@@ -9,6 +9,7 @@ import { BsFillCheckCircleFill as Approve_ico } from "react-icons/bs";
 import ContactForm from '../components/ContactForm'
 import Testimonials from '../components/Testimonials'
 import Footer from '../components/Footer'
+import RequestForm from '../components/RequestForm'
 
 
 function AboutUs() {
@@ -76,6 +77,7 @@ function AboutUs() {
         </div>
       </section>
 
+      <RequestForm />
       <AboutBox />
       <Testimonials />
       <ContactForm />
