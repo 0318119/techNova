@@ -16,7 +16,7 @@ function Services() {
               <div className="container">
                   <div className="row justify-content-center mt-3">
                       <h4 className={`${services.servicesHead}`}>
-                          Why Should You Hire Design Stallion As Your Digital Marketing Company?
+                          Why Should You Hire Tech Nova As Your Digital Marketing Company?
                       </h4>
                       <img src={headLines} alt="" className={`${services.headLinesImg}`}/>
                       <p>

@@ -134,129 +134,80 @@
   border-radius: 5px;
 }
 
-.mainMenuBox .innerMenuBox {
-  position: relative;
-  display: flex;
-  justify-content: flex-end;
+.menuSection {
+  position: fixed;
+  left: -1px;
+  top: 0;
+  height: 100vh;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.4509803922);
+  z-index: 9999;
+  visibility: hidden;
+  transition: all 0.3s ease;
 }
-.mainMenuBox .innerMenuBox ul {
-  position: relative;
-  margin-top: 50px;
-}
-.mainMenuBox .innerMenuBox ul > span {
-  position: absolute;
-  display: block;
-  background: white;
-  width: 2px;
-  height: 531px;
-  left: 0px;
-  top: 26px;
-  border-radius: 60px;
-}
-.mainMenuBox .innerMenuBox ul li {
-  position: relative;
-  border-bottom: 1px solid white;
-  padding: 0 40px 0 0;
-}
-.mainMenuBox .innerMenuBox ul li a {
-  color: white;
-  line-height: 3;
-  font-size: 18px;
-  padding: 0 0px 5px 25px;
-  letter-spacing: 2px;
-  font-weight: 600;
-}
-.mainMenuBox .innerMenuBox ul li a:hover {
-  color: yellow;
-  text-shadow: 0 3px black;
-  transition: 1s;
-}
-
-.dropDownBox span.closeSpan {
-  letter-spacing: 1px;
-  font-weight: 500;
-  font-size: 20px;
-  color: white;
-  position: absolute;
-  top: 11px;
-  right: 29px;
+.menuSection .menuBox {
+  background-image: repeating-linear-gradient(226deg, #2500f9 0, #2500f9 0%, #9100d7 70%);
+  background-size: 4px 4px;
+  position: fixed;
+  left: 0;
+  height: 100vh;
   display: flex;
   align-items: center;
-  margin-right: 20px;
-  text-transform: capitalize;
-  border: 1px solid;
-  padding: 8px 20px;
-  border-radius: 38px;
-  z-index: 999;
+  flex-direction: column;
+  justify-content: space-around;
+  width: 280px;
 }
-.dropDownBox span.closeSpan .crosIcon {
-  width: 100%;
-  position: relative;
-  margin-left: 20px;
-  font-size: 30px;
-}
-.dropDownBox .innerDropDownBox {
-  display: flex;
-  border-left: 3px solid white;
-  margin-top: 70px;
-  margin-left: 15px;
-}
-.dropDownBox .innerDropDownBox ul {
-  border-right: 2px solid white;
-}
-.dropDownBox .innerDropDownBox ul h4 {
-  border-bottom: 2px solid white;
+.menuSection .menuBox .navCloseIco {
   color: white;
-  font-size: 20px;
-  font-weight: 500;
-  padding: 10px 20px;
-  border-top: 2px solid white;
-}
-.dropDownBox .innerDropDownBox ul li {
-  margin: 0 0 0px 20px;
-  padding-right: 20px;
-}
-.dropDownBox .innerDropDownBox ul li a {
-  color: white;
-  line-height: 2;
-  font-size: 17px;
-  letter-spacing: 1px;
-  font-weight: 400;
-}
-.dropDownBox .innerDropDownBox ul li a:hover {
-  color: yellow;
-  text-shadow: 0 3px black;
-  transition: 1s;
-}
-.dropDownBox .innerDropDownBox ul span {
-  text-align: center;
-  margin: 6px 0;
+  margin-left: 23px;
+  font-size: 33px;
   border: 2px solid white;
-  padding: 5px 0;
-  background: yellow;
-  color: black;
-  letter-spacing: 1px;
-  font-weight: 500;
-  font-size: 18px;
-  border-radius: 50px;
-}
-
-.closeBar {
+  border-radius: 20px;
   position: absolute;
-  right: -100%;
-  transition: 1s;
+  padding: 4px 4px;
+  left: 0;
+  top: 32px;
+}
+.menuSection .menuBox .logoPic {
+  height: 110px;
+}
+.menuSection .menuBox ul.navMenuList li a {
+  color: white;
+  padding: 8px 0;
+}
+.menuSection .menuBox ul.navFooter {
   width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+.menuSection .menuBox ul.navFooter h5 {
+  color: white;
+}
+.menuSection .menuBox ul.navFooter div {
+  margin-top: 10px;
+  display: flex;
+  justify-content: space-around;
+  width: 80%;
+}
+.menuSection .menuBox ul.navFooter div li svg {
+  color: white;
+  font-size: 37px;
+  border: 2px solid white;
+  border-radius: 20px 0px 20px 20px;
+  padding: 7px 0px;
+}
+.menuSection .menuBox p {
+  color: #d0d3d5;
+  font-size: 14px;
+  margin-top: 20px;
+  line-height: 25px;
+  text-align: center;
 }
 
-.openBar {
-  position: absolute;
-  right: 0;
-  transition: 1s;
-  width: 100%;
-}
-
-#MenuSection {
-  background: linear-gradient(120deg, #5828fa 0, #7119f1 20%, #8e06e6 100%);
-  padding: 0 0 50px 0;
-  z-index: 9999;
+#openBar {
+  visibility: visible;
+  transition: all 0.3s ease;
+  left: 0;
 }/*# sourceMappingURL=NavBar.module.css.map */

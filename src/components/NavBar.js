@@ -12,10 +12,13 @@ import { BiPhoneCall } from "react-icons/bi";
 import { BsFillTelephoneInboundFill as Phone_icon} from "react-icons/bs";
 import { TfiAlignRight as SideBar_icon} from "react-icons/tfi";
 import { BsFillEnvelopeFill as Envelope } from "react-icons/bs";
+import { BsPlusLg as Plus_ico } from "react-icons/bs";
 import { AiOutlineLinkedin as Linked_in} from "react-icons/ai";
-import { BsChevronRight as Right_arrow} from "react-icons/bs";
-import { AiFillCaretDown as Down_arrow} from "react-icons/ai";
 import { AiOutlineClose as Crose_icon } from "react-icons/ai";
+import { FaFacebookF as Facebook_ico } from "react-icons/fa";
+import { FaTwitter as Twitter_ico } from "react-icons/fa";
+import { FaInstagram as Instagram_ico } from "react-icons/fa";
+import { FaLinkedinIn as LinkedinIn_ico } from "react-icons/fa";
 
 
 function NavBar() {
@@ -64,7 +67,7 @@ function NavBar() {
                 <button className={`${style_Nav.actBtns}`}>Hire us</button>
                 <div>
                   <button className={`${style_Nav.menuBtn}`} onClick={() => {setCloseBar(false)}}>Menu</button>
-                  <SideBar_icon onClick={() => { setCloseBar(false) }} />
+                  <SideBar_icon onClick={() => { setCloseBar(!isCloseBar) }} />
                 </div>
                 <div className={`${style_Nav.actionBox}`} ref={refTwo}>
                   <BiPhoneCall className={`${style_Nav.actIcon}`} onClick={() => {setCloseActionBox((current) => !current) }} />
@@ -106,13 +109,49 @@ function NavBar() {
         </div>
       </section>
 
-      <section className={isCloseBar ? `${style_Nav.closeBar}` : `${style_Nav.openBar}`} id={`${style_Nav.MenuSection}`}>
+
+      <section className={`${style_Nav.menuSection}`} id={isCloseBar ? `${style_Nav.openBar}` : false}>
+        <div className="container">
+          <div className="row">
+            <div className="col-12">
+              <div className={`${style_Nav.menuBox}`}>
+                <div>
+                  <Crose_icon className={`${style_Nav.navCloseIco}`} onClick={() => { setCloseBar(false) }}  />
+                </div>
+                <img src={logo} alt="" className={`${style_Nav.logoPic}`} />
+                <ul className={`${style_Nav.navMenuList}`}>
+                  <li><Link to='/'>Home</Link></li>
+                  <li><Link to='/'>Services <Plus_ico style={{color: "white", marginLeft: "20px",fontSize: "25px"}}/></Link></li>
+                  <li><Link to='/AboutUs'>About</Link></li>
+                  <li><Link to='/OurReview'>Review</Link></li>
+                  <li><Link to='/OurWork'>Our Work</Link></li>
+                  <li><Link to='/Contact'>Contact</Link></li>
+                  <li><Link to='/Contact'>Get a quote</Link></li>
+                </ul>
+                <ul className={`${style_Nav.navFooter}`}>
+                  <h5>Follow US:</h5>
+                  <div className="">
+                    <li><Facebook_ico /></li>
+                    <li><Instagram_ico /></li>
+                    <li><LinkedinIn_ico /></li>
+                    <li><Twitter_ico /></li>
+                  </div>
+                  <p>
+                      © Tech Nova Company llc 2023,
+                      All Rights Reserved.
+                  </p>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      {/* <section className={isCloseBar ? `${style_Nav.closeBar}` : `${style_Nav.openBar}`} id={`${style_Nav.MenuSection}`}>
         <div className="container-fluid">
           <div className="row" ref={refOne}>
             <div className="col-2">
               <div className={`${style_Nav.mainMenuBox}`}>
 
-                {/* ================================= */}
                 <div className={`${style_Nav.innerMenuBox}`}>
                   <ul>
                     <span></span>
@@ -208,7 +247,7 @@ function NavBar() {
             </div>
           </div>
         </div>
-      </section>
+      </section> */}
     </>
   )
 }

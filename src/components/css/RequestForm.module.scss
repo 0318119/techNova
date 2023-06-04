@@ -1,0 +1,107 @@
+// COLORS ===========================================
+@import "color";
+
+
+.requestFormMainBox{
+    display: flex;
+    align-items: center;
+    height: 100vh;
+    position: absolute;
+    top: -180px;
+}
+
+.requestChatSlide{
+    display: flex;
+    position: fixed;
+    width: 209px;
+    background: yellow;
+    align-items: center;
+    right: -161px;
+    padding: 12px 7px;
+    border-radius: 10px 0 0px 10px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    z-index: 1;
+    &:hover{
+        right: 0;
+        transition: all 0.3s ease;
+    }
+    svg{
+        color: black;
+        font-size: 30px;
+        border-right: 1px solid black;
+        padding-right: 5px;
+    }
+    a{
+        color: black !important;
+        margin-left: 20px;
+        font-weight: 600;
+        font-size: 20px;
+        letter-spacing: 2px;
+    }
+}
+.requestChatSlideScd{
+    margin-top: 140px;
+
+}
+
+.rigtsideFormSection{
+    display: flex;
+    align-items: center;
+    position: fixed;
+    right: -288px;
+    margin-top: 23%;
+    transition: all 0.3s ease;
+    button {
+        transform: rotate(-90deg);
+        padding: 12px 27px;
+        right: -69px;
+        background-color: yellow;
+        font-size: 15px;
+        font-weight: 700;
+        text-transform: uppercase;
+        position: relative;
+        z-index: 1;
+        transition: all 0.3s ease-in-out;
+        box-shadow: 10px 11px 29px #0000008f;
+    }
+    .formBox{
+        background: linear-gradient(120deg, #5828fa 0, #7119f1 20%, #8e06e6 100%);
+        box-shadow: -7px 3px 10px #80808033;
+        padding: 15px 40px;
+        z-index: 9999;
+        position: relative;
+        border-radius: 20px 0 0 20px;
+        h5{
+            font-weight: 600;
+            font-size: 22px;
+            color: white;
+        }
+        form{
+            .rightSideFormBtn{
+                transform: translate(0);
+                color: black;
+                background-color: yellow;
+                font-size: 18px;
+                position: relative;
+                display: flex;
+                justify-content: center;
+                width: 100%;
+                padding: 10px 20px;
+                margin-top: 10px;
+                border-radius: 15px;
+                right: 0;
+                z-index: 1;
+                transition: all 0.3s ease-in-out;
+                box-shadow: 10px 11px 29px #0000008f;
+            }
+        }
+    }
+}
+
+
+#rightFormBox{
+    z-index: 9999;
+    right: 0;
+    transition: all 0.3s ease;
+}
