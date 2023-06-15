@@ -1,6 +1,6 @@
 import React from 'react'
-import question from '../components/css/questionspage.module.css'
-import contactImg from '../components/images/contact-bottom.webp'
+import question from './assets/css/questionspage.module.css'
+import contactImg from '../components/assets/images/contact-bottom.webp'
 function QuestionsPage() {
     return (
         <>

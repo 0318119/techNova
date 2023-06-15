@@ -3,12 +3,12 @@ import web_style from '../pages/assets/css/webdesign.module.css'
 import { useState } from 'react'
 import { Tab, Tabs, TabList, TabPanel } from 'react-tabs';
 // ==================================
-import Responsive_Web_img from '../components/images/tab-img-1.webp'
-import WordPress_web_img from '../components/images/tab-img-2.webp'
-import E_commerce_web_img from '../components/images/tab-img-3.webp'
-import Corporate_web_img from '../components/images/tab-img-4.webp'
-import Flat_web_img from '../components/images/tab-img-5.webp'
-import Landing_pages_img from '../components/images/tab-img-6.webp'
+import Responsive_Web_img from '../components/assets/images/tab-img-1.webp'
+import WordPress_web_img from '../components/assets/images/tab-img-2.webp'
+import E_commerce_web_img from '../components/assets/images/tab-img-3.webp'
+import Corporate_web_img from '../components/assets/images/tab-img-4.webp'
+import Flat_web_img from '../components/assets/images/tab-img-5.webp'
+import Landing_pages_img from '../components/assets/images/tab-img-6.webp'
 // ==================================
 import 'react-tabs/style/react-tabs.css';
 

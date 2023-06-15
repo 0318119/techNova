@@ -1,10 +1,10 @@
 import React, { Component } from 'react'
-import testimonials from './css/testimonials.module.css'
+import testimonials from './assets/css/testimonials.module.css'
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
-import clientOne from '../components/images/testimonials/Jay-Saferra.webp'
-import clientTwo from '../components/images/testimonials/1.webp'
-import clientThree from '../components/images/testimonials/Shanaya-Anderson.webp'
+import clientOne from '../components/assets/images/testimonials/Jay-Saferra.webp'
+import clientTwo from '../components/assets/images/testimonials/1.webp'
+import clientThree from '../components/assets/images/testimonials/Shanaya-Anderson.webp'
 import "slick-carousel/slick/slick-theme.css";
 
 

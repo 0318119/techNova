@@ -1,5 +1,5 @@
 #bgBanner {
-  background-image: url(../../../components/images/innerBaner.webp), linear-gradient(120deg, #5828fa 0, #7119f1 20%, #8e06e6 100%) !important;
+  background-image: url(../../../components/assets/images/innerBaner.webp), linear-gradient(120deg, #5828fa 0, #7119f1 20%, #8e06e6 100%) !important;
   background-size: cover;
   background-blend-mode: screen;
 }

@@ -1,9 +1,9 @@
 import React from 'react'
 // CSS =========================================
-import home_page from './css/homeFile.module.css'
+import home_page from './assets/css/homeFile.module.css'
 // IMAGES ======================================
-import aboutImg from './images/teamCover.webp'
-import headLines from './images/icons/headLines.png'
+import aboutImg from './assets/images/teamCover.webp'
+import headLines from './assets/images/icons/headLines.png'
 
 function TechNoveAbout() {
   return (

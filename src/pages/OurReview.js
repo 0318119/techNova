@@ -2,7 +2,7 @@ import React from 'react'
 // ===============================
 import NavBar from '../components/NavBar'
 // ===============================
-import Review from '../components/css/ourReview.module.css'
+import Review from '../components/assets/css/ourReview.module.css'
 import ReviewBoxes from '../components/ReviewBoxes'
 import ContactForm from '../components/ContactForm'
 import Footer from '../components/Footer'

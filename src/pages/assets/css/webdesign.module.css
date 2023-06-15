@@ -1,5 +1,5 @@
 #bgBanner {
-  background-image: url(../../../components/images/innerBaner.webp), linear-gradient(120deg, #5828fa 0, #7119f1 20%, #8e06e6 100%) !important;
+  background-image: url(../../../components/assets/images/innerBaner.webp), linear-gradient(120deg, #5828fa 0, #7119f1 20%, #8e06e6 100%) !important;
   background-size: cover;
   background-blend-mode: screen;
 }
@@ -101,139 +101,42 @@
   animation: zoom 2s ease-out infinite;
 }
 
-.customerSection {
-  margin-top: 100px;
-}
-.customerSection #boxRow {
-  justify-content: space-between;
-}
-.customerSection .cusSupportHead {
-  text-align: center;
-  font-size: 50px;
-  font-weight: 500;
-}
-.customerSection .cusSupportDes {
-  margin-top: 12px;
-  text-align: center;
-  font-size: 17px;
-}
-.customerSection .customerSuportMainBox {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin-top: 50px;
-  background: linear-gradient(127deg, #5828fa 20%, #dc3545 100%);
-  color: white;
-  padding: 20px 0;
-  border-radius: 20px;
-  box-shadow: 10px 10px 10px rgba(128, 128, 128, 0.4588235294);
-}
-.customerSection .customerSuportMainBox span {
-  text-align: center;
-}
-
 .webDescribeSection {
-  margin-top: 200px;
+  margin-top: 100px;
 }
 .webDescribeSection .webDescribeMainBox {
   position: relative;
 }
-.webDescribeSection .webDescribePointsBox {
-  position: absolute;
-  bottom: -20px;
-  right: 18%;
-  width: auto;
-  background-color: white;
-  box-shadow: 10px 10px 10px rgba(128, 128, 128, 0.4588235294);
-}
-.webDescribeSection .webDescribePointsBox .webDescribePointsIconBox {
-  position: absolute;
-  top: -50px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+.webDescribeSection .webDescribeMainBox .webDescribeImgbox img {
+  height: 400px;
   width: 100%;
-  background: linear-gradient(120deg, #5828fa 0, #7119f1 20%, #8e06e6 100%);
-}
-.webDescribeSection .webDescribePointsBox .webDescribePointsIconBox img {
-  height: 70px;
-  filter: brightness(0) saturate(100%) invert(95%) sepia(100%) saturate(2%) hue-rotate(61deg) brightness(110%) contrast(100%);
-  padding: 9px 20px;
-}
-.webDescribeSection .webDescribePointsBox ul {
-  padding: 35px 15px 10px 15px;
-  line-height: 40px;
-}
-.webDescribeSection .webDescribePointsBox ul li {
-  font-size: 20px;
-  display: flex;
-  align-items: center;
-}
-.webDescribeSection .webDescribePointsBox ul li svg {
-  font-size: 22px;
-  margin-right: 10px;
-  color: yellow;
+  -o-object-fit: contain;
+     object-fit: contain;
 }
 
-.webDescribeContentBox h5 {
-  margin-bottom: 50px;
-  font-weight: 600;
-  font-size: 38px;
-}
 .webDescribeContentBox h6 {
   margin-bottom: 34px;
-  font-size: 26px;
-  font-weight: 800;
+  font-size: 34px;
+  font-weight: 600;
+  text-transform: capitalize;
 }
 .webDescribeContentBox p {
   font-size: 17px;
   line-height: 29px;
+  color: #4f4f4f;
 }
-.webDescribeContentBox .webDescribeBtnBox {
-  width: 70%;
-  margin-top: 50px;
+.webDescribeContentBox .webDescribePointsBox {
   display: flex;
-  justify-content: space-between;
+  width: 100%;
 }
-.webDescribeContentBox .webDescribeBtnBox button {
-  color: black;
-  background-color: yellow;
-  font-size: 18px;
-  font-weight: 700;
-  text-transform: uppercase;
-  letter-spacing: 1px;
-  padding: 10px 21px;
-  border-radius: 0;
-  position: relative;
-  z-index: 1;
-  transition: all 0.3s ease-in-out;
-  box-shadow: 10px 11px 29px rgba(0, 0, 0, 0.5607843137);
-}
-.webDescribeContentBox .webDescribeBtnBox button:focus, .webDescribeContentBox .webDescribeBtnBox button:hover {
-  color: white;
-  background-color: transparent;
-  border-radius: 0 15px;
-  border-color: white;
-  background: black;
-}
-.webDescribeContentBox .webDescribeBtnBox button::before {
-  content: "";
-  background: linear-gradient(to right bottom, white 50%, transparent 51%);
+.webDescribeContentBox .webDescribePointsBox ul {
   width: 50%;
-  height: 100%;
-  opacity: 0;
-  position: absolute;
-  top: 0;
-  left: 0;
-  z-index: -1;
-  transition: all 0.3s ease;
 }
-.webDescribeContentBox .webDescribeBtnBox button:focus:before, .webDescribeContentBox .webDescribeBtnBox button:hover:before {
-  width: 25px;
-  height: 25px;
-  opacity: 1;
-  left: -2px;
-  top: -2px;
+.webDescribeContentBox .webDescribePointsBox ul li {
+  font-weight: 700;
+}
+.webDescribeContentBox .webDescribePointsBox ul li svg {
+  color: #5828F9;
 }
 
 .webTabsSection {
@@ -342,7 +245,7 @@
 }
 
 .webPortfolioSection {
-  background-image: url(../../../components/images/portfoliobg2.jpg.webp);
+  background-image: url(../../../components/assets/images/portfoliobg2.jpg.webp);
   padding: 50px 0;
 }
 .webPortfolioSection .webPortfolioMainBox .webPortfolioHeadBox {

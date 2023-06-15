@@ -1,9 +1,9 @@
 import React from 'react'
-import footer_style from './css/footer.module.css'
+import footer_style from './assets/css/footer.module.css'
 import { BiPhoneCall as Call_ico} from "react-icons/bi";
 import { AiOutlineMail as Mail_ico} from "react-icons/ai";
 import { MdOutlineLocationOn as Locate_ico} from "react-icons/md";
-import logo from '../components/images/logo2022.png'
+import logo from '../components/assets/images/logo2022.png'
 import { FaFacebookF as Facebook_ico } from "react-icons/fa";
 import { FaTwitter as Twitter_ico } from "react-icons/fa";
 import { FaInstagram as Instagram_ico } from "react-icons/fa";

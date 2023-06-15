@@ -1,19 +1,17 @@
 import React from 'react'
 // CSS  =============================================
-import Serve_style from './css/ServeIndustries.module.css'
+import Serve_style from './assets/css/ServeIndustries.module.css'
 // ICONS ============================================
-import Edu from './images/icons/educational_web.avi'
-import Finan from './images/icons/finance_icon.avi'
-import EComm from './images/icons/ecommerce_icon.avi'
-import  Business from './images/icons/business_icon.avi'
-import Food from './images/icons/food_icon.avi'
-import Social from './images/icons/social_networking_icon.avi'
-import Health from './images/icons/health_icon.avi'
-import Travel from './images/icons/travel_icon.avi'
-import Construction from './images/icons/construction_icon.avi'
-
-
-import headLines from './images/icons/headLines.png'
+import Edu from './assets/images/icons/educational_web.avi'
+import Finan from './assets/images/icons/finance_icon.avi'
+import EComm from './assets/images/icons/ecommerce_icon.avi'
+import Business from './assets/images/icons/business_icon.avi'
+import Food from './assets/images/icons/food_icon.avi'
+import Social from './assets/images/icons/social_networking_icon.avi'
+import Health from './assets/images/icons/health_icon.avi'
+import Travel from './assets/images/icons/travel_icon.avi'
+import Construction from './assets/images/icons/construction_icon.avi'
+import headLines from './assets/images/icons/headLines.png'
 
 function ServeIndustries() {
   return (

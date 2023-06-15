@@ -1,9 +1,9 @@
 import React from 'react'
 import web_style from '../pages/assets/css/webdesign.module.css'
-import web_one from '../components/images/icons/Strategy.webp';
-import web_two from '../components/images/icons/Design.webp';
-import web_three from '../components/images/icons/Development.webp';
-import web_four from '../components/images/icons/Launch.webp';
+import web_one from '../components/assets/images/icons/Strategy.webp';
+import web_two from '../components/assets/images/icons/Design.webp';
+import web_three from '../components/assets/images/icons/Development.webp';
+import web_four from '../components/assets/images/icons/Launch.webp';
 
 function DesignProcess() {
   return (

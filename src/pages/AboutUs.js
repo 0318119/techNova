@@ -2,15 +2,15 @@ import React from 'react'
 import NavBar from '../components/NavBar'
 // =====================
 import about_style from './assets/css/about.module.css'
-import AboutBox from '../components/AboutBox'
 // ======================
-import aboutImg from '../components/images/about-sec.webp'
+import aboutImg from '../components/assets/images/about-sec.webp'
 import { BsFillCheckCircleFill as Approve_ico } from "react-icons/bs";
 import ContactForm from '../components/ContactForm'
 import Testimonials from '../components/Testimonials'
 import Footer from '../components/Footer'
 import RequestForm from '../components/RequestForm'
-
+import CustomerSaticfaction from '../components/CustomerSaticfaction'
+import services from '../components/assets/css/customerSatisfaction.module.css'
 
 function AboutUs() {
   return (
@@ -78,7 +78,21 @@ function AboutUs() {
       </section>
 
       <RequestForm />
-      <AboutBox />
+      <section className={`${services.services_sided_icon}`}>
+        <div className="container mb-5">
+          <CustomerSaticfaction
+            headOneTxt="12 hours delivery"
+            headTwoTxt="16+ Years’ Experience"
+            headThreeTxt="100% Satisfaction Guarantee"
+            headFourTxt="Increase 200% ROI"
+            // ==========================
+            BoxOneDes="Shortest turn around time in design industrt."
+            BoxTwoDes="Providing Exceptional Services All Across The Globe"
+            BoxThreeDes="Unmatched Customer Support 24/7"
+            BoxFourDes="100% Customer Satisfaction Guaranteed"
+          />
+        </div>
+      </section>
       <Testimonials />
       <ContactForm />
       <Footer />

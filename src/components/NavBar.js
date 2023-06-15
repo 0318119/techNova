@@ -1,12 +1,12 @@
 import React, { useState, useRef,useEffect } from 'react'
 import { Link } from "react-router-dom";
 // CSS ===================================
-import style_Nav from '../components/css/NavBar.module.css'
+import style_Nav from './assets/css/NavBar.module.css'
 // IMAGES ===================================
-import logo from '../components/images/logo2022.png'
-import usa_flag from '../components/images/icons/USA-FLAG.png'
-import skype from '../components/images/icons/skype.png'
-import message from '../components/images/icons/message.png'
+import logo from '../components/assets/images/logo2022.png'
+import usa_flag from '../components/assets/images/icons/USA-FLAG.png'
+import skype from '../components/assets/images/icons/skype.png'
+import message from '../components/assets/images/icons/message.png'
 // ICONS ===================================
 import { BiPhoneCall } from "react-icons/bi";
 import { BsFillTelephoneInboundFill as Phone_icon} from "react-icons/bs";
@@ -22,8 +22,9 @@ import { FaLinkedinIn as LinkedinIn_ico } from "react-icons/fa";
 
 
 function NavBar() {
-  const [isCloseBar, setCloseBar] = useState(true);
+  const [isCloseBar, setCloseBar] = useState(false);
   const [isCloseActionBox, setCloseActionBox] = useState(true);
+  const [isDropDown, setDropDown] = useState(false)
   const refOne = useRef();
   const refTwo  = useRef();
 
@@ -121,7 +122,11 @@ function NavBar() {
                 <img src={logo} alt="" className={`${style_Nav.logoPic}`} />
                 <ul className={`${style_Nav.navMenuList}`}>
                   <li><Link to='/'>Home</Link></li>
-                  <li><Link to='/'>Services <Plus_ico style={{color: "white", marginLeft: "20px",fontSize: "25px"}}/></Link></li>
+                  <li onClick={() => {setDropDown(!isDropDown)}}>
+                    <Link to='/'>Services 
+                      <Plus_ico style={{color: "white", marginLeft: "20px",fontSize: "25px"}}/>
+                    </Link>
+                  </li>
                   <li><Link to='/AboutUs'>About</Link></li>
                   <li><Link to='/OurReview'>Review</Link></li>
                   <li><Link to='/OurWork'>Our Work</Link></li>
@@ -141,6 +146,23 @@ function NavBar() {
                       All Rights Reserved.
                   </p>
                 </ul>
+                {/* ============== */}
+                <div className={`${style_Nav.servicesDropDown}`} id={isDropDown ? `${style_Nav.showDropDown}` : `${style_Nav.hideDropDown}`}>
+                  <ul>
+                    <li><a href="">Logo Design</a></li>
+                    <li><a href="">Branding</a></li>
+                    <li><a href="">Web Design</a></li>
+                    <li><a href="">Web Development</a></li>
+                    <li><a href="">Ecommerce</a></li>
+                    <li><a href="">Mobile App</a></li>
+                    <li><a href="">Motion Graphics</a></li>
+                    <li><a href="">Web Content Writing</a></li>
+                    <li><a href="">SEO</a></li>
+                    <li><a href="">Local SEO</a></li>
+                    <li><a href="">Social Media Marketing</a></li>
+                    <li><a href="">Hosting</a></li>
+                  </ul>
+                </div>
               </div>
             </div>
           </div>

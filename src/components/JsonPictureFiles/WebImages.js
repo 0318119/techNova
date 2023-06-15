@@ -1,14 +1,14 @@
 
 import React from 'react';
-import imgWeb_1 from '../images/portfolio/web/1.webp'
-import imgWeb_2 from '../images/portfolio/web/2.webp'
-import imgWeb_3 from '../images/portfolio/web/3.webp'
-import imgWeb_4 from '../images/portfolio/web/4.webp'
-import imgWeb_5 from '../images/portfolio/web/5.webp'
-import imgWeb_6 from '../images/portfolio/web/6.webp'
-import imgWeb_7 from '../images/portfolio/web/7.webp'
-import imgWeb_8 from '../images/portfolio/web/8.webp'
-import imgWeb_9 from '../images/portfolio/web/8.webp'
+import imgWeb_1 from '../assets/images/portfolio/web/1.webp'
+import imgWeb_2 from '../assets/images/portfolio/web/2.webp'
+import imgWeb_3 from '../assets/images/portfolio/web/3.webp'
+import imgWeb_4 from '../assets/images/portfolio/web/4.webp'
+import imgWeb_5 from '../assets/images/portfolio/web/5.webp'
+import imgWeb_6 from '../assets/images/portfolio/web/6.webp'
+import imgWeb_7 from '../assets/images/portfolio/web/7.webp'
+import imgWeb_8 from '../assets/images/portfolio/web/8.webp'
+import imgWeb_9 from '../assets/images/portfolio/web/8.webp'
 
 export const photos = [
     {

@@ -171,9 +171,38 @@
 .menuSection .menuBox .logoPic {
   height: 110px;
 }
+.menuSection .menuBox ul.navMenuList li {
+  position: relative;
+}
 .menuSection .menuBox ul.navMenuList li a {
   color: white;
   padding: 8px 0;
+}
+.menuSection .menuBox .servicesDropDown {
+  position: absolute;
+  left: -100%;
+  background: white;
+  visibility: hidden;
+  width: 250px;
+  border-radius: 8px;
+  background-image: repeating-linear-gradient(226deg, #2500f9 0, #2500f9 0%, #9100d7 70%);
+  background-size: 4px 4px;
+  box-shadow: -3px -2px 10px rgba(255, 255, 255, 0.231372549);
+}
+.menuSection .menuBox .servicesDropDown ul li {
+  padding: 0 20px;
+}
+.menuSection .menuBox .servicesDropDown ul li a {
+  color: white;
+  line-height: 40px;
+  border: 1px solid;
+  -webkit-mask: conic-gradient(from 180deg at top 5px right 5px, rgba(0, 0, 0, 0) 90deg, #000 0) var(--_i, 200%) 0/200% var(--_i, 8px) border-box no-repeat, conic-gradient(at bottom 5px left 5px, rgba(0, 0, 0, 0) 90deg, #000 0) 0 var(--_i, 200%)/var(--_i, 8px) 200% border-box no-repeat, linear-gradient(#000 0 0) padding-box no-repeat;
+  transition: 0.3s, -webkit-mask-position 0.3s 0.3s;
+}
+.menuSection .menuBox .servicesDropDown ul li a:hover {
+  --_i: 100%;
+  transition: 0.3s, -webkit-mask-size 0.3s 0.3s;
+  text-align: center;
 }
 .menuSection .menuBox ul.navFooter {
   width: 100%;
@@ -210,4 +239,25 @@
   visibility: visible;
   transition: all 0.3s ease;
   left: 0;
+}
+
+#showDropDown {
+  right: -70%;
+  left: unset;
+  visibility: visible;
+  transition: all 0.3s ease;
+  animation: shutter-in-left 1s linear 0s 1 normal none;
+}
+
+@keyframes shutter-in-left {
+  0% {
+    transform: rotateY(-100deg);
+    transform-origin: left;
+    opacity: 0;
+  }
+  100% {
+    transform: rotateX(0deg);
+    transform-origin: right;
+    opacity: 1;
+  }
 }/*# sourceMappingURL=NavBar.module.css.map */

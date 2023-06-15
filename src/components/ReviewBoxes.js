@@ -1,6 +1,6 @@
 import React from 'react'
-import Review from '../components/css/ourReview.module.css'
-import apostrophe from '../components/images/apostrophe.png'
+import Review from './assets//css/ourReview.module.css'
+import apostrophe from '../components/assets/images/apostrophe.png'
 function ReviewBoxes() {
   return (
     <>

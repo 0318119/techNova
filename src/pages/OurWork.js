@@ -1,6 +1,6 @@
 import React,  { useState, useCallback } from 'react'
 import NavBar from '../components/NavBar'
-import work from '../components/css/ourWork.module.css'
+import work from '../components/assets/css/ourWork.module.css'
 import Gallery from "react-photo-gallery";
 import Carousel, { Modal, ModalGateway } from "react-images";
 import { photos } from "../components/JsonPictureFiles/Photos";

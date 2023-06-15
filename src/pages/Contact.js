@@ -6,14 +6,14 @@ import { BsFillEnvelopeOpenFill as Email_ico} from "react-icons/bs";
 import { MdCall as Phone_ico } from "react-icons/md";
 import { AiFillLinkedin as Linkedin_ico } from "react-icons/ai";
 // ==============================
-import why1 from '../components/images/award/20.webp'
-import why2 from '../components/images/award/18.webp'
-import why3 from '../components/images/award/11.webp'
-import why4 from '../components/images/award/19.webp'
-import why5 from '../components/images/award/15.webp'
-import why6 from '../components/images/award/09.webp'
-import why7 from '../components/images/award/05.webp'
-import why8 from '../components/images/award/16.webp'
+import why1 from '../components/assets/images/award/20.webp'
+import why2 from '../components/assets/images/award/18.webp'
+import why3 from '../components/assets/images/award/11.webp'
+import why4 from '../components/assets/images/award/19.webp'
+import why5 from '../components/assets/images/award/15.webp'
+import why6 from '../components/assets/images/award/09.webp'
+import why7 from '../components/assets/images/award/05.webp'
+import why8 from '../components/assets/images/award/16.webp'
 import QuestionsPage from '../components/QuestionsPage';
 // =========================
 import ContactForm from '../components/ContactForm'

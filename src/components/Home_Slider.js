@@ -1,8 +1,8 @@
 import React from 'react'
 // CSS =========================
-import slide_style from '../components/css/slider.module.css'
+import slide_style from './assets/css/slider.module.css'
 // IMAGES ======================
-import slider_img from '../components/images/slider/slider.webp'
+import slider_img from '../components/assets/images/slider/slider.webp'
 // COMPONENTS ==================
 import NavBar from '../components/NavBar'
 // ICONS =======================

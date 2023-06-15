@@ -1,12 +1,12 @@
 
 import React from 'react';
-import imgWeb from '../images/portfolio/web/1.webp'
+// import imgWeb from './components/assets/images/portfolio/web/1.webp'
 export const photos = [
-    {
-      src: imgWeb,
-      width: 4,
-      height: 3,
-    },
+    // {
+      // src: imgWeb,
+      // width: 4,
+      // height: 3,
+    // },
     {
       src: "https://source.unsplash.com/Dm-qxdynoEc/800x799",
       width: 1,

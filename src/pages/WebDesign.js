@@ -5,11 +5,10 @@ import NavBar from '../components/NavBar'
 // ==============
 import { BsFillCheckCircleFill as Approve_ico } from "react-icons/bs";
 import webImg from './assets/images/box_1.webp'
-import web_ico from '../pages/assets/images/icons/web_ico.webp'
-import CustomerSatisfaction from '../components/CustomerSatisfaction';
 import web_prove_img from '../pages/assets/images/collage.webp'
+import ScdCustomerSatisfaction from '../components/ScdCustomerSatisfaction';
 // =====================
-import web_thumb from '../pages/assets/images/web-thumb.webp'
+import web_thumb from '../pages/assets/images/web-thumb.png'
 import WebDesignTabs from '../components/WebDesignTabs';
 import WebPortfolio from '../components/WebPortfolio';
 import WebPackages from '../components/Packages/WebPackages';
@@ -57,9 +56,7 @@ function WebDesign() {
                   </div>
               </section>
           </div>
-
-          <CustomerSatisfaction />
-
+          <ScdCustomerSatisfaction />
           <section className={`${web_style.webDescribeSection}`}>
             <div className="container">
                 <div className="row">
@@ -68,29 +65,23 @@ function WebDesign() {
                             <div className={`${web_style.webDescribeImgbox}`}>
                                 <img src={web_thumb} alt="" />
                             </div>
-                             <div className={`${web_style.webDescribePointsBox}`}>
-                                <div className={`${web_style.webDescribePointsIconBox}`}>
-                                    <img src={web_ico} alt="" />
-                                </div>
-                                <ul>
-                                      <li><Approve_ico /> We are affordable</li>
-                                      <li><Approve_ico /> We offer immaculate designs</li>
-                                      <li><Approve_ico /> We are a team of expert designers</li>
-                                      <li><Approve_ico /> We ensure you guaranteed satisfaction</li>
-                                </ul>
-                             </div>
                         </div>
                     </div>
                     <div className="col-6">
                         <div className={`${web_style.webDescribeContentBox}`}>
-                              <h5>Web Design & <br /> Development</h5>
                               <h6>Make your audience stay with our technology-driven and intuitive solutions</h6>
                               <p>
                                   Customers search for things by using keywords. These keywords will link them to your website. For a valuable search engine, you need to have good web development. At American Website Designers LLC, our team comprises of highly talented individuals who know how to make your website interactive. We offer solutions for businesses looking for a smooth working website with an excellent UI. From basic websites to complex requirements, our team fulfills it all!
                               </p>
-                              <div className={`${web_style.webDescribeBtnBox}`}>
-                                <button>Order Now</button>
-                                <button>view Pricing</button>
+                              <div className={`${web_style.webDescribePointsBox}`}>
+                                  <ul>
+                                      <li><Approve_ico /> Get more consumers.</li>
+                                      <li><Approve_ico /> Best user-centered designs.</li>
+                                  </ul>
+                                  <ul>
+                                      <li><Approve_ico /> SEO friendly, highly interactive & mobile-friendly.</li>
+                                      <li><Approve_ico /> Reach your audience and expand your business.</li>
+                                  </ul>
                               </div>
                         </div>
                     </div>

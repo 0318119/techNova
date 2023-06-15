@@ -1,6 +1,6 @@
 import React from 'react'
 // ==================================
-import contact_style from '../components/css/contactForm.module.css'
+import contact_style from './assets/css/contactForm.module.css'
 // ========================================
 import { BsFillCheckCircleFill as Approve_ico } from "react-icons/bs";
 
