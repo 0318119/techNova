@@ -17,6 +17,10 @@ import RequestForm from '../components/RequestForm';
 import Testimonials from '../components/Testimonials';
 import ContactForm from '../components/ContactForm';
 import Footer from '../components/Footer';
+import why1 from '../components/assets/images/icons/watch.avi'
+import why2 from '../components/assets/images/icons/why-2-w.avi'
+import why3 from '../components/assets/images/icons/why-3-w.avi'
+import why4 from '../components/assets/images/icons/why-4-w.avi'
 
 
 function WebDesign() {
@@ -56,7 +60,36 @@ function WebDesign() {
                   </div>
               </section>
           </div>
-          <ScdCustomerSatisfaction />
+
+          <section className={`${web_style.scdCusSatisfaction}`}>
+                <div className="container">
+                    <div className="row">
+                        <h5 className={`${web_style.scdCusSatisfactHead}`}>Helping Businesses Outperform With Custom Digital Marketing Services</h5>
+                        <p className={`${web_style.scdCusSatisfactDes}`}>TechNova is committed to providing professional digital services to your brand’s culture, core values & distinction. We take a strategic approach to creating unique brand identities by working with the industry’s best designers. We create perfect designs that speak for themselves.</p>
+                    </div>
+                </div>
+              <div className={`${web_style.scdCusSatisfactionContainer}`}>
+                  
+                <ScdCustomerSatisfaction 
+                    headOneTxt="Shortest Turnaround"
+                    BoxOneDes="Quickly deliveries in design industries"
+                    BoxOneIcon={why1}
+                    //===========
+                    headTwoTxt="20 Years Experience"
+                    BoxTwoDes="Providing outstanding services all over the world"
+                    BoxTwoIcon={why2}
+                    //===========
+                    headThreeTxt="Complete Satisfaction"
+                    BoxThreeDes="Offering unmatched satisfaction when it comes to projects"
+                    BoxThreeIcon={why3}
+                    //===========
+                    headFourTxt="Increased ROI"
+                    BoxFourDes="Augmented Roi with weekly reports"
+                    BoxFourIcon={why4}
+                />
+              </div>
+          </section>
+
           <section className={`${web_style.webDescribeSection}`}>
             <div className="container">
                 <div className="row">
@@ -89,9 +122,9 @@ function WebDesign() {
             </div>
           </section>
 
+          <WebPortfolio />
           <WebDesignTabs />
           <RequestForm />
-          <WebPortfolio />
           <WebPackages />
           <DesignProcess />
 

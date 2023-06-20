@@ -52,7 +52,7 @@
 .services_sided_icon .servicesBox:hover {
   background: linear-gradient(120deg, #5828fa 0, #7119f1 20%, #8e06e6 100%);
   transition: 1s;
-  box-shadow: 10px 30px 0px rgba(128, 128, 128, 0.4588235294);
+  box-shadow: 10px 16px 0px rgba(128, 128, 128, 0.4588235294);
 }
 .services_sided_icon .servicesBox:hover img {
   filter: unset !important;
@@ -87,7 +87,7 @@
 }
 .services_sided_icon #servicesBoxActive {
   background: linear-gradient(120deg, #5828fa 0, #7119f1 20%, #8e06e6 100%);
-  box-shadow: 10px 30px 0px rgba(128, 128, 128, 0.4588235294);
+  box-shadow: 10px 16px 0px rgba(128, 128, 128, 0.4588235294);
 }
 .services_sided_icon #servicesBoxActive img {
   filter: unset !important;

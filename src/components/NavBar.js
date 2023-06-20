@@ -149,18 +149,18 @@ function NavBar() {
                 {/* ============== */}
                 <div className={`${style_Nav.servicesDropDown}`} id={isDropDown ? `${style_Nav.showDropDown}` : `${style_Nav.hideDropDown}`}>
                   <ul>
-                    <li><a href="">Logo Design</a></li>
-                    <li><a href="">Branding</a></li>
-                    <li><a href="">Web Design</a></li>
-                    <li><a href="">Web Development</a></li>
-                    <li><a href="">Ecommerce</a></li>
-                    <li><a href="">Mobile App</a></li>
-                    <li><a href="">Motion Graphics</a></li>
-                    <li><a href="">Web Content Writing</a></li>
-                    <li><a href="">SEO</a></li>
-                    <li><a href="">Local SEO</a></li>
-                    <li><a href="">Social Media Marketing</a></li>
-                    <li><a href="">Hosting</a></li>
+                    <li><Link to="">Logo Design</Link></li>
+                    <li><Link to="">Branding</Link></li>
+                    <li><Link to="/WebDesign">Web Design</Link></li>
+                    <li><Link to="">Web Development</Link></li>
+                    <li><Link to="">Ecommerce</Link></li>
+                    <li><Link to="">Mobile App</Link></li>
+                    <li><Link to="">Motion Graphics</Link></li>
+                    <li><Link to="">Web Content Writing</Link></li>
+                    <li><Link to="">SEO</Link></li>
+                    <li><Link to="">Local SEO</Link></li>
+                    <li><Link to="">Social Media Marketing</Link></li>
+                    <li><Link to="">Hosting</Link></li>
                   </ul>
                 </div>
               </div>

@@ -123,7 +123,86 @@
         animation: zoom 2s ease-out infinite;
     }
 }
-
+// SECOND CUSTOMER SATISFACTION SECTION CSS =====================
+.scdCusSatisfaction{
+    text-align: center;
+    margin-top: 50px;
+    .scdCusSatisfactHead{
+        font-size: 37px;
+        font-weight: 700;
+    }
+    .scdCusSatisfactDes{
+        margin-top: 20px;
+        font-size: 16px;
+        color: #4f4f4f;
+    }
+    .scdCusSatisfactionContainer{
+        width: 90%;
+        margin: 20px auto 0 auto;
+    }
+    #scdCusSatisfactBoxActive{
+        background: $backgorundLinear;
+        box-shadow: 10px 16px 0px $shadowColor;
+        img {
+            filter: unset;
+        }
+        .scdCusSatisfactInnerBox {
+            h4 {
+                color: $textColorWhite;
+            }
+            p {
+                color: $textColorWhite;
+            }
+        }
+    }
+    .scdCusSatisfactBox{
+        background: $textColorWhite;
+        box-shadow: 3px 2px 10px $shadowColor;
+        color: black;
+        padding: 22px 20px;
+        border-radius: 11px;
+        display: flex;
+        align-items: center;
+        img{
+            height: 120px;
+            filter: brightness(0%);
+        }
+        // HOVER ON BOX
+        &:hover {
+            background: $backgorundLinear;
+            transition: 1s;
+            box-shadow: 10px 16px 0px $shadowColor;
+            img {
+                filter: unset !important;
+                transition: 0.1s;
+            }
+            .scdCusSatisfactInnerBox {
+                h4 {
+                    color: $textColorWhite;
+                    transition: 0.1s;
+                }
+                p {
+                    color: $textColorWhite;
+                    transition: 0.1s;
+                }
+            }
+        }
+    }
+    .scdCusSatisfactInnerBox{
+        text-align: left;
+        margin-left: 30px;
+        height: inherit;
+        h4{
+            font-size: 20px;
+            font-weight: 600;
+        }
+        p{
+            margin-top: 5px;
+            font-size: 16px;
+            font-weight: 400;
+        }
+    }
+}
 // =======================
 .webDescribeSection {
     margin-top: 100px;
@@ -152,7 +231,7 @@
     p {
         font-size: 17px;
         line-height: 29px;
-        color: #4f4f4f;
+        color: $paragraphColor;
     }
     .webDescribePointsBox{
         display: flex;
@@ -170,17 +249,16 @@
 }
 // ======================
 .webTabsSection{
-    margin-top: 150px;
     background: $backgorundLinear;
     .webTabsBox{
-        margin-top: 80px;
+        padding: 50px 0;
         .webTabsMenuBox{
             display: flex;
-                justify-content: space-between;
-                background-color: white;
-                padding: 10px 10px;
-                border-radius: 10px;
-                box-shadow: 10px 10px 10px black;
+            justify-content: space-between;
+            background-color: white;
+            padding: 10px 10px;
+            border-radius: 10px 10px 0 0;
+            box-shadow: 10px 10px 10px black;
             .webTabsMenu{
                 background: $bgYellowColor;
                 text-transform: capitalize;
@@ -200,7 +278,7 @@
 .webTabsSection{
     .webTabBox{
         background: white;
-        margin-top: 50px;
+        margin-top: 2px;
         .innerWebTabBox{
             display: flex;
             align-items: center;
@@ -283,18 +361,20 @@
 }
 // ======================
 .webPortfolioSection{
+    margin-top: 50px;
     background-image: url(../../../components/assets/images/portfoliobg2.jpg.webp);
     padding: 50px 0;
     .webPortfolioMainBox{
         .webPortfolioHeadBox{
             display: flex;
             justify-content: center;
-            align-items: center;
+            align-items: baseline;
             flex-direction: column;
             color: $textColorWhite;
+            border-bottom: 5px double #8080804d;
             h5{
-                font-size: 40px;
-                font-weight: 600;
+                font-size: 60px;
+                font-weight: 700;
             }
             p{
                 margin-top: 10px;
@@ -312,24 +392,25 @@
     .webPackagesHeadBox{
             display: flex;
             flex-direction: column;
-            align-items: center;
+            align-items: baseline;
             color: $textColorWhite;
+            margin-left: 15px;
+            border-bottom: 5px double rgba(128, 128, 128, 0.3019607843);
             h5 {
-                font-size: 40px;
+                font-size: 60px;
                 font-weight: 600;
             }
             p {
                 margin-top: 30px;
-                padding: 0 100px;
-                text-align: center;
                 font-size: 21px;
             }
     }
     .pricingTable {
         background: #fff;
         text-align: center;
-        padding: 0 0 40px;
+        padding: 2px 2px 9px 2px;
         margin: 20px 15px;
+        border-radius: 27px;
         .pricingTable_header {
             color: #fff;
             background: $TableBgLinear;
@@ -339,6 +420,7 @@
             outline: 2px solid #fff;
             outline-offset: -15px;
             position: relative;
+            border-radius: 30px 30px 0 0;
             &::after{
                 content: "";
                 background: linear-gradient(to top right, #7905c5 50%, transparent 50%);
@@ -353,7 +435,7 @@
         }
         .title {
             color: $textColorWhite;
-            font-size: 35px;
+            font-size: 25px;
             font-weight: 700;
             text-transform: uppercase;
         }
@@ -399,17 +481,6 @@
                             transparent 75%,
                             transparent)
                 }
-            // &::after{
-            //     content: "";
-            //     background: linear-gradient(to top right, #7905c5 49%, transparent 50%);
-            //     width: 30px;
-            //     height: 30px;
-            //     box-shadow: -5px 5px 7px rgba(0, 0, 0, 0.2);
-            //     transform: translateX(-50%) rotate(-45deg);
-            //     position: absolute;
-            //     bottom: -15px;
-            //     left: 50%;
-            // }
             li {
                 color: $textColorWhite;
                 font-size: 15px;
@@ -426,11 +497,9 @@
             button {
                 color: $textColorWhite;
                 background-color: #7905c5;
-                font-family: "Raleway", sans-serif;
-                font-size: 18px;
+                font-size: 15px;
                 font-weight: 700;
                 text-transform: uppercase;
-                letter-spacing: 1px;
                 padding: 15px 20px;
                 border-radius: 0;
                 position: relative;
@@ -515,16 +584,17 @@
             border-radius: 0 0 0 20px;
         }
     img{
-        height: 80px;
+        height: 55px;
     }
     h5{
-        margin-top: 26px;
+        margin-top: 8px;
         font-weight: 700;
-        font-size: 30px;
+        font-size: 26px;
     }
     p{
         text-align: center;
-        margin-top: 19px;
+        margin-top: 4px;
+        font-size: 15px;
     }
 }
 // =================

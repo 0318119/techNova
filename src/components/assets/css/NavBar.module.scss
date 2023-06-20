@@ -219,26 +219,18 @@
             visibility: hidden;
             width: 250px;
             border-radius: 8px;
-            background-image: repeating-linear-gradient(226deg, #2500f9 0, #2500f9 0%, #9100d7 70%);
+            background-image: repeating-linear-gradient(226deg, #f9f7ff 0, #ffffff 0%, #1212123d 70%);
             background-size: 4px 4px;
             box-shadow: -3px -2px 10px #ffffff3b;
             ul{
                 li{
                     padding: 0 20px;
                     a{
-                        color: $textColorWhite;
+                        color: black;
                         line-height: 40px;
-                        border: 1px solid;
-                            -webkit-mask: 
-                                conic-gradient(from 180deg at top 5px right 5px, #0000 90deg, #000 0) var(--_i, 200%) 0 /200% var(--_i, 8px) border-box no-repeat,
-                                conic-gradient(at bottom 5px left 5px, #0000 90deg, #000 0) 0 var(--_i, 200%)/var(--_i, 8px) 200% border-box no-repeat,
-                                linear-gradient(#000 0 0) padding-box no-repeat;
-                            transition: .3s, -webkit-mask-position .3s .3s;
-                            &:hover{
-                                    --_i: 100%;
-                                    transition: .3s, -webkit-mask-size .3s .3s;
-                                    text-align: center;
-                                }
+                        &:hover{
+                            font-weight: 600;
+                        }
                     }
                 }
             }

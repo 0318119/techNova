@@ -185,7 +185,7 @@
   visibility: hidden;
   width: 250px;
   border-radius: 8px;
-  background-image: repeating-linear-gradient(226deg, #2500f9 0, #2500f9 0%, #9100d7 70%);
+  background-image: repeating-linear-gradient(226deg, #f9f7ff 0, #ffffff 0%, rgba(18, 18, 18, 0.2392156863) 70%);
   background-size: 4px 4px;
   box-shadow: -3px -2px 10px rgba(255, 255, 255, 0.231372549);
 }
@@ -193,16 +193,11 @@
   padding: 0 20px;
 }
 .menuSection .menuBox .servicesDropDown ul li a {
-  color: white;
+  color: black;
   line-height: 40px;
-  border: 1px solid;
-  -webkit-mask: conic-gradient(from 180deg at top 5px right 5px, rgba(0, 0, 0, 0) 90deg, #000 0) var(--_i, 200%) 0/200% var(--_i, 8px) border-box no-repeat, conic-gradient(at bottom 5px left 5px, rgba(0, 0, 0, 0) 90deg, #000 0) 0 var(--_i, 200%)/var(--_i, 8px) 200% border-box no-repeat, linear-gradient(#000 0 0) padding-box no-repeat;
-  transition: 0.3s, -webkit-mask-position 0.3s 0.3s;
 }
 .menuSection .menuBox .servicesDropDown ul li a:hover {
-  --_i: 100%;
-  transition: 0.3s, -webkit-mask-size 0.3s 0.3s;
-  text-align: center;
+  font-weight: 600;
 }
 .menuSection .menuBox ul.navFooter {
   width: 100%;
