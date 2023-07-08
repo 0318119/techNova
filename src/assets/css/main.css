@@ -351,3 +351,8 @@ input:focus {
     height: 500px;
     border-radius: 10px;
 }
+
+/* REACT TABS STYLED -=-=-=-=-=---=-=-=-=-=-=-=-=-=-=-=-=-=-=-=--=-=- */
+.react-tabs__tab--selected{
+    color: black !important;
+}

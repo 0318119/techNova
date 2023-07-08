@@ -117,7 +117,10 @@ function NavBar() {
             <div className="col-12">
               <div className={`${style_Nav.menuBox}`}>
                 <div>
-                  <Crose_icon className={`${style_Nav.navCloseIco}`} onClick={() => { setCloseBar(false) }}  />
+                  <Crose_icon className={`${style_Nav.navCloseIco}`} onClick={() => { 
+                    setCloseBar(false)
+                    setDropDown(false)
+                    }}  />
                 </div>
                 <img src={logo} alt="" className={`${style_Nav.logoPic}`} />
                 <ul className={`${style_Nav.navMenuList}`}>
@@ -168,108 +171,6 @@ function NavBar() {
           </div>
         </div>
       </section>
-      {/* <section className={isCloseBar ? `${style_Nav.closeBar}` : `${style_Nav.openBar}`} id={`${style_Nav.MenuSection}`}>
-        <div className="container-fluid">
-          <div className="row" ref={refOne}>
-            <div className="col-2">
-              <div className={`${style_Nav.mainMenuBox}`}>
-
-                <div className={`${style_Nav.innerMenuBox}`}>
-                  <ul>
-                    <span></span>
-                    <li><Link to="/">Home</Link></li>
-                    <li><Link to="/OurWork">Our work</Link></li>
-                    <li><Link to="">Services <Right_arrow /></Link></li>
-                    <li><Link to="/AboutUs">About us</Link></li>
-                    <li><Link to="/OurReview">Our reviews</Link></li>
-                    <li><Link to="/Contact">Contact us</Link></li>
-                    <li className='border-0'><Link to="/Contact">Get a quote</Link></li>
-                  </ul>
-                </div>
-
-              </div>
-            </div>
-
-            <div className="col-10" >
-              <div className={`${style_Nav.dropDownBox}`}>
-                <span className={`${style_Nav.closeSpan}`} onClick={() => {setCloseBar(true)}} >  close <Crose_icon className={`${style_Nav.crosIcon}`} /> </span>
-                <div className={`${style_Nav.innerDropDownBox}`}>
-                  <ul>
-                    <h4>Web Development</h4>
-                    <li><Link to="/WebDesign">Web Design</Link></li>
-                    <li><Link href="">Email Templates</Link></li>
-                    <li><Link href="">Landing Page</Link></li>
-                    <li><Link href="">UX Design</Link></li>
-                    <li><Link href="">PHP</Link></li>
-                    <li><Link href="">Laravel</Link></li>
-                    <li><Link href="">NodeJS</Link></li>
-                    <li><Link href="">ReactJS</Link></li>
-                    <li><Link href="">NextJS</Link></li>
-                    <li><Link href="">AngularJS</Link></li>
-                    <li><Link href="">VueJS</Link></li>
-                  </ul>
-
-                  <ul>
-                    <h4>CMS Development</h4>
-                    <li><Link href="">Wordpress</Link></li>
-                    <li><Link href="">Magento</Link></li>
-                    <li><Link href="">Shopify</Link></li>
-                    <li><Link href="">Joomla</Link></li>
-                    <li><Link href="">Drupal</Link></li>
-                    <li><Link href="">WooCommerce</Link></li>
-                    <li><Link href="">Opencart</Link></li>
-                    <li><Link href="">ClickFunnels</Link></li>
-                  </ul>
-
-                  <ul>
-                    <h4>Logo & Animation</h4>
-                    <li><Link href="">Iconic Logo</Link></li>
-                    <li><Link href="">Typography Logo</Link></li>
-                    <li><Link href="">Illustrative Logo</Link></li>
-                    <li><Link href="">Animated Logo</Link></li>
-                    <li><Link href="">3d Logo</Link></li>
-                    <li><Link href="">2d Logo</Link></li>
-                    <span>Animations <Down_arrow /></span>
-                    <li><Link href="">2d Graphics Anime</Link></li>
-                    <li><Link href="">3d Graphics Anime</Link></li>
-                    <li><Link href="">Typography Anime</Link></li>
-                    <li><Link href="">White Board Anime</Link></li>
-                  </ul>
-
-                  <ul>
-                    <h4>Mobile Apps</h4>
-                    <li><Link href="">Mobile Apps</Link></li>
-                    <li><Link href="">Andriod Apps</Link></li>
-                    <li><Link href="">IOS Apps</Link></li>
-                    <li><Link href="">Web Apps</Link></li>
-                    <li><Link href="">Native Apps</Link></li>
-                    <li><Link href="">Hybrid Apps</Link></li>
-                  </ul>
-
-                  <ul>
-                    <h4>Digital Marketing</h4>
-                    <li><Link href="">SEM</Link></li>
-                    <li><Link href="">Content Management</Link></li>
-                    <li><Link href="">SMA</Link></li>
-                    <li><Link href="">SMM</Link></li>
-                    <li><Link href="">SEO</Link></li>
-                    <li><Link href="">Pay Per Click</Link></li>
-                    <li><Link href="">Email Marketing</Link></li>
-                  </ul>
-
-                  <ul>
-                    <h4>Print Media Design</h4>
-                    <li><Link href="">Brochure Design</Link></li>
-                    <li><Link href="">T-Shirts &amp; Caps Design</Link></li>
-                    <li><Link href="">Car Wraps</Link></li>
-                    <li><Link href="">Stationary Design</Link></li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section> */}
     </>
   )
 }

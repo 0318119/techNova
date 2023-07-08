@@ -255,16 +255,16 @@
         .webTabsMenuBox{
             display: flex;
             justify-content: space-between;
-            background-color: white;
-            padding: 10px 10px;
-            border-radius: 10px 10px 0 0;
-            box-shadow: 10px 10px 10px black;
+            background: black;
+            margin-bottom: 21px;
+            padding: 10px 32px;
+            border-radius: 50px;
             .webTabsMenu{
-                background: $bgYellowColor;
+                // background: $bgYellowColor;
                 text-transform: capitalize;
-                color: black;
+                color: white;
                 font-weight: 700;
-                font-size: 20px;
+                font-size: 15px;
                 padding: 10px 15px;
                 cursor: pointer;
                 &:focus{
@@ -279,6 +279,7 @@
     .webTabBox{
         background: white;
         margin-top: 2px;
+        border-radius: 20px 20px 0 0;
         .innerWebTabBox{
             display: flex;
             align-items: center;
@@ -304,7 +305,6 @@
                     button {
                             color: black;
                             background-color: yellow;
-                            font-family: "Raleway", sans-serif;
                             font-size: 18px;
                             font-weight: 700;
                             text-transform: uppercase;
@@ -599,7 +599,7 @@
 }
 // =================
 .webProveSection{
-    background-image: url(../../../pages/assets/images/greybg.webp);
+    background: linear-gradient(to top right, black 50%, rgba(0, 0, 0, 0.9490196078) 50%);
     background-size: cover;
     padding: 50px 0;
     margin-top: 10px;

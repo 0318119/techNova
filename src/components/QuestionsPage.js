@@ -5,9 +5,9 @@ function QuestionsPage() {
     return (
         <>
             <section className={`${question.questionSection}`}>
-                <div className="container" id={`${question.questionsSecBgClor}`}>
-                    <div className="row justify-content-center">
-                        <div className="col-lg-8">
+                <div className="container p-0 mb-3" id={`${question.questionsSecBgClor}`}>
+                    <div className="row justify-content-center p-0">
+                        <div className="col-lg-9">
                             <div className={`${question.questionBox}`}>
                                 <div className={`${question.questionBoxLeftArea}`}>
                                     <h4>Have a Question?</h4>

@@ -30,14 +30,14 @@ const [isOpen, setOpen] = useState(false)
           <div className={`${request.formBox}`}>
             <form action="">
               <h5>Sign Up Now & <br /> Let’s Get Started</h5>
-              <div class="form-group mt-3">
-                <input type="text" class="form-control" placeholder="Enter Your Name*" required/><br />
-                <input type="emal" class="form-control" placeholder="Enter Your Email*" required /><br />
-                <input type="number" class="form-control" placeholder="Enter Your Phone*" required /><br />
+              <div className="form-group mt-3">
+                <input type="text" className="form-control" placeholder="Enter Your Name*" required/><br />
+                <input type="emal" className="form-control" placeholder="Enter Your Email*" required /><br />
+                <input type="number" className="form-control" placeholder="Enter Your Phone*" required /><br />
               </div>
-              <div class="form-group">
+              <div className="form-group">
                 <label className='mb-2' style={{color: "white"}}>Tell About Your Project</label>
-                <textarea class="form-control" rows="3"></textarea>
+                <textarea className="form-control" rows="3"></textarea>
               </div>
               <button className={`${request.rightSideFormBtn}`} type='submit'>Submit</button>
             </form>
