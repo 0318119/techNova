@@ -5,7 +5,7 @@
 .questionSection {
     #questionsSecBgClor {
         padding: 20px;
-        background: #0dcaf014;
+        background: black;
     }
 
     .questionBox {
@@ -15,7 +15,9 @@
         // flex-wrap: wrap;
 
         .questionBoxLeftArea {
-            h4 {}
+            h4 {
+                color: $textColorWhite;
+            }
 
             .innerEmailQuestionBox {
                 display: flex;
@@ -25,6 +27,7 @@
                 span {
                     font-weight: 700;
                     font-size: 20px;
+                    color: $textColorWhite;
                 }
 
                 a {

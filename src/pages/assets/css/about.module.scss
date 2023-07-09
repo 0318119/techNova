@@ -41,13 +41,13 @@
 .aboutTxtBox {
     h5 {
         font-size: 55px;
-        color: $headTxtColor;
+        color: $textColorWhite;
         font-weight: 600;
         text-transform: capitalize;
     }
 
     p {
-        color: grey;
+        color: $textColorWhite;
     }
 
     .aboutListBox {
@@ -61,6 +61,7 @@
             li {
                 display: flex;
                 align-items: center;
+                color: $textColorWhite;
 
                 svg {
                     color: $blueTxtColor;

@@ -43,11 +43,13 @@
     h4{
         margin-top: 20px;
         font-size: 35px;
+        color: $textColorWhite;
     }
     .reviewScrollBox{
         margin-top: 20px;
         p{
             font-size: 18px;
+            color: $textColorWhite;
         }
     }
 }
@@ -69,9 +71,11 @@
         span:nth-child(1){
             font-size: 30px;
             font-weight: 600;
+            color: $textColorWhite;
         }
         span:nth-child(2) {
             margin-top: 5px;
+            color: $textColorWhite;
         }
     }
 }

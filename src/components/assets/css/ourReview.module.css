@@ -39,12 +39,14 @@
 .reviewBox h4 {
   margin-top: 20px;
   font-size: 35px;
+  color: white;
 }
 .reviewBox .reviewScrollBox {
   margin-top: 20px;
 }
 .reviewBox .reviewScrollBox p {
   font-size: 18px;
+  color: white;
 }
 
 .nameLogoBox {
@@ -66,9 +68,11 @@
 .nameLogoBox h5 span:nth-child(1) {
   font-size: 30px;
   font-weight: 600;
+  color: white;
 }
 .nameLogoBox h5 span:nth-child(2) {
   margin-top: 5px;
+  color: white;
 }
 
 #reviewColBox {

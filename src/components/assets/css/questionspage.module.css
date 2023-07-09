@@ -1,11 +1,14 @@
 .questionSection #questionsSecBgClor {
   padding: 20px;
-  background: rgba(13, 202, 240, 0.0784313725);
+  background: black;
 }
 .questionSection .questionBox {
   display: flex;
   align-items: center;
   justify-content: space-between;
+}
+.questionSection .questionBox .questionBoxLeftArea h4 {
+  color: white;
 }
 .questionSection .questionBox .questionBoxLeftArea .innerEmailQuestionBox {
   display: flex;
@@ -15,6 +18,7 @@
 .questionSection .questionBox .questionBoxLeftArea .innerEmailQuestionBox span {
   font-weight: 700;
   font-size: 20px;
+  color: white;
 }
 .questionSection .questionBox .questionBoxLeftArea .innerEmailQuestionBox a {
   font-size: 18px;

@@ -80,7 +80,7 @@ function Contact() {
         </section>
 
         <section className={`${contact_style.awardSection}`}>
-              <div className="container pt-4 pb-4" style={{ background: "#6ec1e433" }}>
+              <div className="container pt-4 pb-4" style={{ background: "black" }}>
                 <div className="row">
                     <h5 className={`${contact_style.awardedHead}`}>Our Awards</h5>
                 </div>

@@ -130,11 +130,13 @@
     .scdCusSatisfactHead{
         font-size: 37px;
         font-weight: 700;
+        color: $textColorWhite;
     }
     .scdCusSatisfactDes{
         margin-top: 20px;
         font-size: 16px;
         color: #4f4f4f;
+        color: $textColorWhite;
     }
     .scdCusSatisfactionContainer{
         width: 90%;
@@ -226,12 +228,13 @@
         font-size: 34px;
         font-weight: 600;
         text-transform: capitalize;
+        color: $textColorWhite;
     }
 
     p {
         font-size: 17px;
         line-height: 29px;
-        color: $paragraphColor;
+        color: $textColorWhite;
     }
     .webDescribePointsBox{
         display: flex;
@@ -240,6 +243,7 @@
             width: 50%;
             li{
                 font-weight: 700;
+                color: $textColorWhite;
                 svg{
                     color: #5828F9;
                 }
@@ -551,6 +555,7 @@
          font-size: 45px;
          font-weight: 600;
          text-align: center;
+         color: $textColorWhite;
      }
  }
 .designProcessBox{

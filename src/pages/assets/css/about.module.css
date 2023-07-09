@@ -29,12 +29,12 @@
 
 .aboutTxtBox h5 {
   font-size: 55px;
-  color: #242f51;
+  color: white;
   font-weight: 600;
   text-transform: capitalize;
 }
 .aboutTxtBox p {
-  color: grey;
+  color: white;
 }
 .aboutTxtBox .aboutListBox {
   display: flex;
@@ -47,6 +47,7 @@
 .aboutTxtBox .aboutListBox ul li {
   display: flex;
   align-items: center;
+  color: white;
 }
 .aboutTxtBox .aboutListBox ul li svg {
   color: #5828F9;

@@ -4,7 +4,8 @@
 
 body {
     overflow-x: clip;
-    background: whitesmoke;
+    /* background: whitesmoke; */
+    background: linear-gradient(to top right, #181818 65%, rgba(0, 0, 0, 0.9490196078) 50%);
 }
 
 h1,

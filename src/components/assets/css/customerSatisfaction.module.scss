@@ -37,11 +37,12 @@
         font-size: 60px;
         font-weight: 600;
         text-align: center;
-        color: $headTxtColor;
+        color: $textColorWhite;
     }
 
     p {
         text-align: center;
+        color: $textColorWhite;
     }
 
     .headLinesImg {
@@ -56,6 +57,7 @@
         padding: 10px 20px;
         margin-top: 30px;
         transition: 1s;
+        background: $textColorWhite;
         &:hover{
             background: $backgorundLinear;
             transition: 1s;
@@ -96,6 +98,7 @@
                 margin: 0;
                 text-align: left;
                 margin-top: 10px;
+                color: black;
             }
         }
     }

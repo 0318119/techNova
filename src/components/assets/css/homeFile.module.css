@@ -10,13 +10,11 @@
   }
 }
 .aboutSection {
-  margin-top: 10px;
-  background: linear-gradient(to top right, black 50%, rgba(0, 0, 0, 0.9490196078) 50%);
-  color: white;
-  padding: 44px 0;
+  margin-top: 100px;
 }
 .aboutSection .aboutTxtBox .aboutHead {
   font-size: 40px;
+  color: white;
 }
 .aboutSection .aboutTxtBox img {
   height: 44px;
@@ -25,6 +23,7 @@
      object-fit: cover;
 }
 .aboutSection .aboutTxtBox p {
+  color: white;
   line-height: 27px;
   margin: 30px 0;
 }
